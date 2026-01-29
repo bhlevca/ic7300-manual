@@ -351,7 +351,8 @@ def render_clickable_image(image_path: str, hotspots: List[Dict]) -> Optional[st
         ID of clicked hotspot or None.
     """
     # This would use streamlit-image-coordinates in production
-    st.image(image_path, use_container_width=True)
+    # Use explicit width (or let Streamlit choose) instead of deprecated parameters
+    st.image(image_path)
     st.info("Interactive hotspots coming soon. Use the buttons above to explore controls.")
     return None
 

@@ -137,33 +137,22 @@ def load_image_base64(image_name: str) -> str:
 
 
 def display_image(image_name: str, caption: str = "", width: int = None):
-    """Display an image with optional caption and debug info."""
+    """Display an image with optional caption."""
     image_path = get_image_path(image_name)
-    exists = image_path.exists()
-    # Debug output to help diagnose missing images
-    st.markdown(f"**Image debug:** `{image_name}` → `{image_path}` (exists={exists})")
-    if exists:
+    if image_path.exists():
         try:
-            # Read as bytes and hand to Streamlit (works even if path resolution has issues)
+            # Read as bytes and hand to Streamlit (this avoids path issues)
             with open(image_path, "rb") as f:
                 img_bytes = f.read()
             if width:
                 st.image(img_bytes, caption=caption, width=width)
             else:
-                st.image(img_bytes, caption=caption, use_column_width=True)
+                # Let Streamlit choose natural sizing when width not specified
+                st.image(img_bytes, caption=caption)
         except Exception as e:
             st.error(f"Failed to load image `{image_name}`: {e}")
     else:
         st.warning(f"Image not found: {image_name}")
-        # Show available images for debugging
-        img_dir = Path("content") / "images"
-        try:
-            imgs = sorted([p.name for p in img_dir.glob("*")])
-            st.markdown("**Available images in content/images/**")
-            st.write(imgs)
-        except Exception as e:
-            st.write(f"Error listing image directory: {e}")
-        st.markdown(f"**Current working directory:** `{Path.cwd()}`")
 
 
 def load_chapter_content(chapter_file: str) -> str:
@@ -281,6 +270,20 @@ def render_chapter_content(chapter_file: str, chapter_title: str):
     
     # Render the full markdown content
     st.markdown(content)
+
+    # If this is a device/interactive chapter, render its images and controls inline
+    if chapter_file == "02_front_panel.md":
+        st.markdown("---")
+        st.markdown("### Interactive: Front Panel Visuals")
+        render_front_panel_page()
+    elif chapter_file == "03_rear_panel.md":
+        st.markdown("---")
+        st.markdown("### Interactive: Rear Panel Visuals")
+        render_rear_panel_page()
+    elif chapter_file == "09_touchscreen_menus.md":
+        st.markdown("---")
+        st.markdown("### Interactive: Touch Screen and Menus")
+        render_touch_menu_page()
     
     # Real-life experience expander at the bottom
     with st.expander("💡 Real-Life Experience & Tips", expanded=False):
