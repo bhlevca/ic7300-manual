@@ -432,64 +432,64 @@ Microvolt (one millionth of a volt)
 
 ## Common Q-Codes Reference
 
-| Code | Question | Answer |
-|------|----------|--------|
-| QRA | What is your station name? | My station name is... |
-| QRG | What is my exact frequency? | Your frequency is... |
-| QRH | Does my frequency vary? | Your frequency varies |
-| QRI | How is my tone? | Your tone is... |
-| QRK | What is my readability? | Your readability is... |
-| QRL | Is this frequency busy? | Yes, this frequency is busy |
-| QRM | Is my signal interfered with? | Your signal has interference |
-| QRN | Are you troubled by static? | I am troubled by static |
-| QRO | Shall I increase power? | Increase power |
-| QRP | Shall I decrease power? | Decrease power |
-| QRQ | Shall I send faster? | Send faster |
-| QRS | Shall I send slower? | Send slower |
-| QRT | Shall I stop sending? | Stop sending |
-| QRU | Have you anything for me? | I have nothing for you |
-| QRV | Are you ready? | I am ready |
-| QRX | When will you call again? | I will call at... |
-| QRZ | Who is calling me? | You are being called by... |
-| QSA | What is my signal strength? | Your signal strength is... |
-| QSB | Are my signals fading? | Your signals are fading |
-| QSD | Is my keying defective? | Your keying is defective |
-| QSK | Can you hear me between signals? | I can hear you between signals |
-| QSL | Can you acknowledge receipt? | I acknowledge receipt |
-| QSO | Can you communicate with...? | I can communicate with... |
-| QSY | Shall I change frequency? | Change to... kHz/MHz |
-| QTH | What is your location? | My location is... |
-| QTR | What is the correct time? | The time is... |
+| Code | Question                         | Answer                         |
+| ---- | -------------------------------- | ------------------------------ |
+| QRA  | What is your station name?       | My station name is...          |
+| QRG  | What is my exact frequency?      | Your frequency is...           |
+| QRH  | Does my frequency vary?          | Your frequency varies          |
+| QRI  | How is my tone?                  | Your tone is...                |
+| QRK  | What is my readability?          | Your readability is...         |
+| QRL  | Is this frequency busy?          | Yes, this frequency is busy    |
+| QRM  | Is my signal interfered with?    | Your signal has interference   |
+| QRN  | Are you troubled by static?      | I am troubled by static        |
+| QRO  | Shall I increase power?          | Increase power                 |
+| QRP  | Shall I decrease power?          | Decrease power                 |
+| QRQ  | Shall I send faster?             | Send faster                    |
+| QRS  | Shall I send slower?             | Send slower                    |
+| QRT  | Shall I stop sending?            | Stop sending                   |
+| QRU  | Have you anything for me?        | I have nothing for you         |
+| QRV  | Are you ready?                   | I am ready                     |
+| QRX  | When will you call again?        | I will call at...              |
+| QRZ  | Who is calling me?               | You are being called by...     |
+| QSA  | What is my signal strength?      | Your signal strength is...     |
+| QSB  | Are my signals fading?           | Your signals are fading        |
+| QSD  | Is my keying defective?          | Your keying is defective       |
+| QSK  | Can you hear me between signals? | I can hear you between signals |
+| QSL  | Can you acknowledge receipt?     | I acknowledge receipt          |
+| QSO  | Can you communicate with...?     | I can communicate with...      |
+| QSY  | Shall I change frequency?        | Change to... kHz/MHz           |
+| QTH  | What is your location?           | My location is...              |
+| QTR  | What is the correct time?        | The time is...                 |
 
 ---
 
 ## Phonetic Alphabet
 
-| Letter | Word | Pronunciation |
-|--------|------|---------------|
-| A | Alpha | AL-fah |
-| B | Bravo | BRAH-voh |
-| C | Charlie | CHAR-lee |
-| D | Delta | DEL-tah |
-| E | Echo | EK-oh |
-| F | Foxtrot | FOKS-trot |
-| G | Golf | GOLF |
-| H | Hotel | hoh-TEL |
-| I | India | IN-dee-ah |
-| J | Juliet | JEW-lee-et |
-| K | Kilo | KEY-loh |
-| L | Lima | LEE-mah |
-| M | Mike | MIKE |
-| N | November | no-VEM-ber |
-| O | Oscar | OSS-car |
-| P | Papa | pah-PAH |
-| Q | Quebec | keh-BEK |
-| R | Romeo | ROW-me-oh |
-| S | Sierra | see-AIR-ah |
-| T | Tango | TANG-go |
-| U | Uniform | YOU-nee-form |
-| V | Victor | VIK-tor |
-| W | Whiskey | WISS-key |
-| X | X-ray | EKS-ray |
-| Y | Yankee | YANG-key |
-| Z | Zulu | ZOO-loo |
+| Letter | Word     | Pronunciation |
+| ------ | -------- | ------------- |
+| A      | Alpha    | AL-fah        |
+| B      | Bravo    | BRAH-voh      |
+| C      | Charlie  | CHAR-lee      |
+| D      | Delta    | DEL-tah       |
+| E      | Echo     | EK-oh         |
+| F      | Foxtrot  | FOKS-trot     |
+| G      | Golf     | GOLF          |
+| H      | Hotel    | hoh-TEL       |
+| I      | India    | IN-dee-ah     |
+| J      | Juliet   | JEW-lee-et    |
+| K      | Kilo     | KEY-loh       |
+| L      | Lima     | LEE-mah       |
+| M      | Mike     | MIKE          |
+| N      | November | no-VEM-ber    |
+| O      | Oscar    | OSS-car       |
+| P      | Papa     | pah-PAH       |
+| Q      | Quebec   | keh-BEK       |
+| R      | Romeo    | ROW-me-oh     |
+| S      | Sierra   | see-AIR-ah    |
+| T      | Tango    | TANG-go       |
+| U      | Uniform  | YOU-nee-form  |
+| V      | Victor   | VIK-tor       |
+| W      | Whiskey  | WISS-key      |
+| X      | X-ray    | EKS-ray       |
+| Y      | Yankee   | YANG-key      |
+| Z      | Zulu     | ZOO-loo       |

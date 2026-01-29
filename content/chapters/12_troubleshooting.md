@@ -37,13 +37,13 @@ When something goes wrong, follow this process:
 
 **Symptom:** Press POWER, nothing happens.
 
-| Check | Solution |
-|-------|----------|
-| Power supply on? | Turn on power supply |
-| Voltage correct? | Verify 13.8V ±15% |
-| DC cable connected? | Check both ends, verify polarity |
-| Fuse blown? | Check/replace 30A fuse in DC cable |
-| Radio fuse? | Internal fuse (requires service) |
+| Check               | Solution                           |
+| ------------------- | ---------------------------------- |
+| Power supply on?    | Turn on power supply               |
+| Voltage correct?    | Verify 13.8V ±15%                  |
+| DC cable connected? | Check both ends, verify polarity   |
+| Fuse blown?         | Check/replace 30A fuse in DC cable |
+| Radio fuse?         | Internal fuse (requires service)   |
 
 **Detailed Checks:**
 
@@ -106,12 +106,12 @@ When something goes wrong, follow this process:
 
 **Quick Checks:**
 
-| Check | How |
-|-------|-----|
-| Volume up? | Turn AF knob clockwise |
-| Squelch open? | SQL knob fully counter-clockwise |
-| Correct mode? | Check mode matches expected signals |
-| Antenna connected? | Verify ANT connector |
+| Check              | How                                 |
+| ------------------ | ----------------------------------- |
+| Volume up?         | Turn AF knob clockwise              |
+| Squelch open?      | SQL knob fully counter-clockwise    |
+| Correct mode?      | Check mode matches expected signals |
+| Antenna connected? | Verify ANT connector                |
 
 **Detailed Troubleshooting:**
 
@@ -186,13 +186,13 @@ When something goes wrong, follow this process:
 
 **Identifying Noise Types:**
 
-| Type | Sound | Source | Solution |
-|------|-------|--------|----------|
-| White noise | Hiss | Normal/distant | Use NR |
-| Impulse | Clicks | Ignition, motors | Use NB |
-| Buzz | 60/120 Hz | Power supply | Check filtering |
-| Hash | Raspy | Computer, LED | Find and eliminate |
-| Heterodyne | Whistle | Carrier | Use Notch |
+| Type        | Sound     | Source           | Solution           |
+| ----------- | --------- | ---------------- | ------------------ |
+| White noise | Hiss      | Normal/distant   | Use NR             |
+| Impulse     | Clicks    | Ignition, motors | Use NB             |
+| Buzz        | 60/120 Hz | Power supply     | Check filtering    |
+| Hash        | Raspy     | Computer, LED    | Find and eliminate |
+| Heterodyne  | Whistle   | Carrier          | Use Notch          |
 
 **Tracking Down Local Noise:**
 
@@ -224,12 +224,12 @@ When something goes wrong, follow this process:
 
 **Quick Checks:**
 
-| Check | Solution |
-|-------|----------|
-| Correct mode? | Some modes require audio input |
-| Power setting? | Check RF Power not at 0 |
-| PTT working? | Check TRANSMIT LED lights |
-| Antenna connected? | Verify connection |
+| Check              | Solution                       |
+| ------------------ | ------------------------------ |
+| Correct mode?      | Some modes require audio input |
+| Power setting?     | Check RF Power not at 0        |
+| PTT working?       | Check TRANSMIT LED lights      |
+| Antenna connected? | Verify connection              |
 
 **Detailed Troubleshooting:**
 
@@ -391,12 +391,12 @@ When something goes wrong, follow this process:
 
 **Common Issues:**
 
-| Symptom | Likely Cause | Fix |
-|---------|--------------|-----|
-| Software can't find radio | Wrong COM port | Check Device Manager |
-| Timeout errors | Baud rate mismatch | Match radio & software |
-| Partial control | Echo back off | Enable CI-V Echo Back |
-| Erratic behavior | Multiple programs | Close other CAT programs |
+| Symptom                   | Likely Cause       | Fix                      |
+| ------------------------- | ------------------ | ------------------------ |
+| Software can't find radio | Wrong COM port     | Check Device Manager     |
+| Timeout errors            | Baud rate mismatch | Match radio & software   |
+| Partial control           | Echo back off      | Enable CI-V Echo Back    |
+| Erratic behavior          | Multiple programs  | Close other CAT programs |
 
 ### No TX Audio in Digital Modes
 
@@ -530,13 +530,13 @@ When something goes wrong, follow this process:
 
 ### Common Error Messages
 
-| Message | Meaning | Action |
-|---------|---------|--------|
-| HIGH SWR | SWR above protection threshold | Check antenna |
-| TEMP | Overtemperature | Reduce duty cycle, improve cooling |
-| LOW BATT | Backup battery low | Replace CR2032 |
-| SD ERR | SD card problem | Try different card |
-| NO FILE | Expected file not found | Verify file on SD card |
+| Message  | Meaning                        | Action                             |
+| -------- | ------------------------------ | ---------------------------------- |
+| HIGH SWR | SWR above protection threshold | Check antenna                      |
+| TEMP     | Overtemperature                | Reduce duty cycle, improve cooling |
+| LOW BATT | Backup battery low             | Replace CR2032                     |
+| SD ERR   | SD card problem                | Try different card                 |
+| NO FILE  | Expected file not found        | Verify file on SD card             |
 
 ### TX Inhibit Conditions
 

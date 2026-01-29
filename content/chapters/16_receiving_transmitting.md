@@ -43,12 +43,12 @@ The IC-7300 includes sophisticated DSP-based noise reduction that can dramatical
 
 ### NR Levels and Their Effects
 
-| Level | Effect | Best For |
-|-------|--------|----------|
-| 1-3 | Mild, natural sound | Light background noise |
-| 4-6 | Moderate reduction | Typical HF conditions |
-| 7-10 | Aggressive | Heavy noise/QRM |
-| 11-15 | Maximum | Extreme conditions |
+| Level | Effect              | Best For               |
+| ----- | ------------------- | ---------------------- |
+| 1-3   | Mild, natural sound | Light background noise |
+| 4-6   | Moderate reduction  | Typical HF conditions  |
+| 7-10  | Aggressive          | Heavy noise/QRM        |
+| 11-15 | Maximum             | Extreme conditions     |
 
 > ⚠️ **Warning**: High NR levels can cause "warbling" artifacts on speech. Use the minimum level needed.
 
@@ -56,8 +56,8 @@ The IC-7300 includes sophisticated DSP-based noise reduction that can dramatical
 
 Navigate to **MENU** → **SET** → **Function** → **NR**
 
-| Setting | Description |
-|---------|-------------|
+| Setting  | Description                   |
+| -------- | ----------------------------- |
 | NR Level | 0-15, higher = more reduction |
 
 **Pro tip:** Start at level 4-5 and adjust by ear. Too much NR sounds unnatural and can reduce intelligibility.
@@ -82,10 +82,10 @@ The NB detects sharp noise pulses and "blanks" them out before they reach your e
 
 **MENU** → **SET** → **Function** → **NB**
 
-| Setting | Range | Description |
-|---------|-------|-------------|
-| NB Level | 0-100 | Threshold for blanking |
-| NB Depth | 1-10 | How aggressively to blank |
+| Setting  | Range | Description                 |
+| -------- | ----- | --------------------------- |
+| NB Level | 0-100 | Threshold for blanking      |
+| NB Depth | 1-10  | How aggressively to blank   |
 | NB Width | 1-100 | Duration of blanking window |
 
 **Starting point:** Level 50, Depth 5, Width 50
@@ -130,11 +130,11 @@ For stubborn interference, manual notch gives you precise control:
 
 **MENU** → **SET** → **Function** → **NOTCH**
 
-| Setting | Description |
-|---------|-------------|
-| SSB/CW Auto Notch | Enable ANF per mode |
-| Notch Width | Narrow, Mid, Wide |
-| Notch Position | Shows current notch frequency |
+| Setting           | Description                   |
+| ----------------- | ----------------------------- |
+| SSB/CW Auto Notch | Enable ANF per mode           |
+| Notch Width       | Narrow, Mid, Wide             |
+| Notch Position    | Shows current notch frequency |
 
 ---
 
@@ -152,11 +152,11 @@ MENU → SET → Function → VOX
 
 ### VOX Settings
 
-| Setting | Range | Description |
-|---------|-------|-------------|
-| VOX Gain | 0-100 | Sensitivity (higher = triggers easier) |
-| VOX Delay | 0-2.0 sec | Time to hold TX after voice stops |
-| Anti VOX | 0-100 | Prevents speaker audio from triggering TX |
+| Setting   | Range     | Description                               |
+| --------- | --------- | ----------------------------------------- |
+| VOX Gain  | 0-100     | Sensitivity (higher = triggers easier)    |
+| VOX Delay | 0-2.0 sec | Time to hold TX after voice stops         |
+| Anti VOX  | 0-100     | Prevents speaker audio from triggering TX |
 
 ### Setting Up VOX
 
@@ -194,10 +194,10 @@ The Monitor function lets you hear your transmitted audio through the speaker or
 
 **MENU** → **SET** → **Function** → **MONITOR**
 
-| Setting | Description |
-|---------|-------------|
-| MONI Level | Volume of monitored audio (0-100) |
-| MONI TX Audio | What to monitor (MIC, ACC, USB) |
+| Setting       | Description                       |
+| ------------- | --------------------------------- |
+| MONI Level    | Volume of monitored audio (0-100) |
+| MONI TX Audio | What to monitor (MIC, ACC, USB)   |
 
 ### Uses for Monitor Function
 
@@ -292,12 +292,12 @@ The attenuator reduces the input signal level, preventing receiver overload from
 
 The IC-7300 provides multiple attenuation levels:
 
-| Level | Reduction | Use Case |
-|-------|-----------|----------|
-| OFF | 0 dB | Normal operation |
-| 6 dB | -6 dB | Mild overload |
-| 12 dB | -12 dB | Moderate overload |
-| 18 dB | -18 dB | Strong signals nearby |
+| Level | Reduction | Use Case              |
+| ----- | --------- | --------------------- |
+| OFF   | 0 dB      | Normal operation      |
+| 6 dB  | -6 dB     | Mild overload         |
+| 12 dB | -12 dB    | Moderate overload     |
+| 18 dB | -18 dB    | Strong signals nearby |
 
 > ⚠️ **Note**: Using attenuation reduces sensitivity. Only use when needed.
 
@@ -309,11 +309,11 @@ The preamp boosts weak signals at the expense of increased noise floor.
 
 ### Preamp Levels
 
-| Setting | Effect | Best For |
-|---------|--------|----------|
-| P.AMP OFF | Normal gain | Most conditions |
-| P.AMP 1 | +10 dB gain | Weak signals, quiet bands |
-| P.AMP 2 | +16 dB gain | Very weak signals, low noise |
+| Setting   | Effect      | Best For                     |
+| --------- | ----------- | ---------------------------- |
+| P.AMP OFF | Normal gain | Most conditions              |
+| P.AMP 1   | +10 dB gain | Weak signals, quiet bands    |
+| P.AMP 2   | +16 dB gain | Very weak signals, low noise |
 
 ### When to Use Preamp
 
@@ -342,10 +342,10 @@ Clean transmission is courtesy to other operators. The IC-7300 provides tools to
 
 **MENU** → **SET** → **Function** → **TX**
 
-| Band | Maximum Power |
-|------|---------------|
-| HF (1.8-29.7 MHz) | 100W |
-| 6m (50-54 MHz) | 100W |
+| Band              | Maximum Power |
+| ----------------- | ------------- |
+| HF (1.8-29.7 MHz) | 100W          |
+| 6m (50-54 MHz)    | 100W          |
 
 ### Setting Power Level
 
@@ -357,11 +357,11 @@ Or adjust the RF PWR slider on the touch screen.
 
 ### Power vs. S-Units
 
-| Power | Approximate S-Unit Change |
-|-------|---------------------------|
-| 100W → 50W | -0.5 S-unit |
-| 100W → 25W | -1 S-unit |
-| 100W → 10W | -1.7 S-units |
+| Power      | Approximate S-Unit Change |
+| ---------- | ------------------------- |
+| 100W → 50W | -0.5 S-unit               |
+| 100W → 25W | -1 S-unit                 |
+| 100W → 10W | -1.7 S-units              |
 
 > 💡 **Tip**: Use the minimum power needed. QRP (5W) contacts are more satisfying!
 
@@ -392,9 +392,9 @@ The compressor increases average power without increasing peak power, improving 
 
 ### Compressor Settings
 
-| Setting | Range | Effect |
-|---------|-------|--------|
-| COMP Level | 0-10 | Higher = more compression |
+| Setting    | Range | Effect                    |
+| ---------- | ----- | ------------------------- |
+| COMP Level | 0-10  | Higher = more compression |
 
 **Conservative setting:** 3-4 for natural sound
 **Aggressive setting:** 6-8 for DX/contests
@@ -418,12 +418,12 @@ ALC (Automatic Level Control) prevents over-driving the transmitter.
 
 **ALC meter interpretation:**
 
-| ALC Reading | Meaning | Action |
-|-------------|---------|--------|
-| Not moving | Under-driven | May increase gain |
-| Just touching | Perfect | No action needed |
-| Mid-scale | OK, watching | Reduce if hits max |
-| Pinned/max | Over-driven | **Reduce input immediately** |
+| ALC Reading   | Meaning      | Action                       |
+| ------------- | ------------ | ---------------------------- |
+| Not moving    | Under-driven | May increase gain            |
+| Just touching | Perfect      | No action needed             |
+| Mid-scale     | OK, watching | Reduce if hits max           |
+| Pinned/max    | Over-driven  | **Reduce input immediately** |
 
 ### Power Meter
 
@@ -446,11 +446,11 @@ Shows actual RF output power.
 
 **MENU** → **SET** → **Function** → **TX** → **SSB TX BPF**
 
-| Setting | Bandwidth | Use |
-|---------|-----------|-----|
-| 100-2900 Hz | Wide | Local/ragchew |
-| 300-2700 Hz | Medium | General use |
-| 500-2500 Hz | Narrow | DX/contests |
+| Setting     | Bandwidth | Use           |
+| ----------- | --------- | ------------- |
+| 100-2900 Hz | Wide      | Local/ragchew |
+| 300-2700 Hz | Medium    | General use   |
+| 500-2500 Hz | Narrow    | DX/contests   |
 
 ### Monitor TX Audio
 

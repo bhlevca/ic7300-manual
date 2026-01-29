@@ -8,15 +8,15 @@ Proper installation is critical for safe and optimal operation of your IC-7300. 
 
 Your IC-7300 package should include:
 
-| Item | Quantity | Notes |
-|------|----------|-------|
-| IC-7300 Transceiver | 1 | The radio itself |
-| HM-219 Hand Microphone | 1 | With UP/DOWN buttons |
-| DC Power Cable | 1 | Fused (20A), with Anderson connector |
-| Spare Fuses | 2 | 20A blade type |
-| USB Cable | 1 | Type A to Type B |
-| Plugs/Covers | Various | For unused connectors |
-| Manual & Warranty | 1 set | Keep for reference |
+| Item                   | Quantity | Notes                                |
+| ---------------------- | -------- | ------------------------------------ |
+| IC-7300 Transceiver    | 1        | The radio itself                     |
+| HM-219 Hand Microphone | 1        | With UP/DOWN buttons                 |
+| DC Power Cable         | 1        | Fused (20A), with Anderson connector |
+| Spare Fuses            | 2        | 20A blade type                       |
+| USB Cable              | 1        | Type A to Type B                     |
+| Plugs/Covers           | Various  | For unused connectors                |
+| Manual & Warranty      | 1 set    | Keep for reference                   |
 
 > **Missing something?** Contact ICOM support or your dealer immediately.
 
@@ -35,13 +35,13 @@ Choose a location that provides:
 
 ### Required Accessories (Not Included)
 
-| Item | Specification | Why You Need It |
-|------|---------------|-----------------|
-| **Power Supply** | 13.8V DC, 30A continuous | Powers the radio |
-| **Antenna** | 50Ω, rated for 100W+ | For transmitting/receiving |
-| **Coax Cable** | RG-8, LMR-400, or equivalent | Connects antenna to radio |
-| **Ground Wire** | #10 AWG or heavier | RFI reduction, safety |
-| **Antenna Tuner** | Optional, 50Ω | If antenna SWR > 1.5:1 |
+| Item              | Specification                | Why You Need It            |
+| ----------------- | ---------------------------- | -------------------------- |
+| **Power Supply**  | 13.8V DC, 30A continuous     | Powers the radio           |
+| **Antenna**       | 50Ω, rated for 100W+         | For transmitting/receiving |
+| **Coax Cable**    | RG-8, LMR-400, or equivalent | Connects antenna to radio  |
+| **Ground Wire**   | #10 AWG or heavier           | RFI reduction, safety      |
+| **Antenna Tuner** | Optional, 50Ω                | If antenna SWR > 1.5:1     |
 
 ---
 
@@ -91,12 +91,12 @@ The IC-7300 requires **13.8V DC** (acceptable range: 11.7V - 15.6V).
 
 ### Wire Gauge Requirements
 
-| Cable Length | Minimum Wire Gauge |
-|--------------|-------------------|
-| Up to 1m (3ft) | 14 AWG |
-| 1-2m (3-6ft) | 12 AWG |
-| 2-3m (6-10ft) | 10 AWG |
-| Over 3m | Not recommended |
+| Cable Length   | Minimum Wire Gauge |
+| -------------- | ------------------ |
+| Up to 1m (3ft) | 14 AWG             |
+| 1-2m (3-6ft)   | 12 AWG             |
+| 2-3m (6-10ft)  | 10 AWG             |
+| Over 3m        | Not recommended    |
 
 ---
 
@@ -117,24 +117,24 @@ The IC-7300 has a single antenna connector on the rear panel:
 
 ### Coax Cable Selection
 
-| Cable Type | Loss at 30MHz (per 100ft) | Best Use |
-|------------|---------------------------|----------|
-| RG-8X | 2.0 dB | Short runs (<50ft) |
-| RG-8 | 1.3 dB | Medium runs |
-| LMR-400 | 0.7 dB | Long runs, low loss |
-| Hardline | 0.3 dB | Tower installations |
+| Cable Type | Loss at 30MHz (per 100ft) | Best Use            |
+| ---------- | ------------------------- | ------------------- |
+| RG-8X      | 2.0 dB                    | Short runs (<50ft)  |
+| RG-8       | 1.3 dB                    | Medium runs         |
+| LMR-400    | 0.7 dB                    | Long runs, low loss |
+| Hardline   | 0.3 dB                    | Tower installations |
 
 ### Antenna Recommendations by Band
 
-| Band | Good Options |
-|------|-------------|
+| Band | Good Options                   |
+| ---- | ------------------------------ |
 | 160m | Inverted L, full-size vertical |
-| 80m | Dipole, inverted V, vertical |
-| 40m | Dipole, vertical, EFHW |
-| 20m | Dipole, beam, vertical |
-| 15m | Beam, vertical, dipole |
-| 10m | Beam, vertical |
-| 6m | Beam, vertical, dipole |
+| 80m  | Dipole, inverted V, vertical   |
+| 40m  | Dipole, vertical, EFHW         |
+| 20m  | Dipole, beam, vertical         |
+| 15m  | Beam, vertical, dipole         |
+| 10m  | Beam, vertical                 |
+| 6m   | Beam, vertical, dipole         |
 
 > 🔗 **See also**: [Antenna & SWR](06_antenna_swr.md) for tuning and matching.
 
@@ -206,14 +206,14 @@ The IC-7300 appears as two audio devices:
 
 Configure in: **MENU** → **SET** → **Connectors** → **CI-V**
 
-| Setting | Recommended Value |
-|---------|-------------------|
-| CI-V Baud Rate | 19200 (reliable) or 115200 (fast) |
-| CI-V Address | 94h (default for IC-7300) |
-| CI-V Transceive | ON (for real-time freq updates) |
-| CI-V USB Port | Unlink from [REMOTE] |
-| CI-V USB Baud Rate | Auto |
-| CI-V USB Echo Back | OFF |
+| Setting            | Recommended Value                 |
+| ------------------ | --------------------------------- |
+| CI-V Baud Rate     | 19200 (reliable) or 115200 (fast) |
+| CI-V Address       | 94h (default for IC-7300)         |
+| CI-V Transceive    | ON (for real-time freq updates)   |
+| CI-V USB Port      | Unlink from [REMOTE]              |
+| CI-V USB Baud Rate | Auto                              |
+| CI-V USB Echo Back | OFF                               |
 
 > 🔗 **See also**: [Digital Modes Overview](07_digital_modes.md) for software configuration.
 
@@ -237,26 +237,26 @@ The included HM-219 provides:
 
 ### Other Compatible Microphones
 
-| Microphone | Type | Notes |
-|------------|------|-------|
-| HM-219 | Hand mic | Included with radio |
-| SM-30 | Desktop | Great for ragchewing |
-| SM-50 | Desktop | Premium option |
-| Heil PR-781 | Studio | Needs adapter cable |
-| Any dynamic | Various | Check wiring diagram |
+| Microphone  | Type     | Notes                |
+| ----------- | -------- | -------------------- |
+| HM-219      | Hand mic | Included with radio  |
+| SM-30       | Desktop  | Great for ragchewing |
+| SM-50       | Desktop  | Premium option       |
+| Heil PR-781 | Studio   | Needs adapter cable  |
+| Any dynamic | Various  | Check wiring diagram |
 
 ### Microphone Wiring (8-pin connector)
 
-| Pin | Function | Wire Color (HM-219) |
-|-----|----------|---------------------|
-| 1 | MIC audio | Shielded wire |
-| 2 | 8V output | - |
-| 3 | PTT | White |
-| 4 | MIC ground | Shield |
-| 5 | UP | Yellow |
-| 6 | DOWN | Green |
-| 7 | +8V output | - |
-| 8 | SQL (not used) | - |
+| Pin | Function       | Wire Color (HM-219) |
+| --- | -------------- | ------------------- |
+| 1   | MIC audio      | Shielded wire       |
+| 2   | 8V output      | -                   |
+| 3   | PTT            | White               |
+| 4   | MIC ground     | Shield              |
+| 5   | UP             | Yellow              |
+| 6   | DOWN           | Green               |
+| 7   | +8V output     | -                   |
+| 8   | SQL (not used) | -                   |
 
 ---
 
@@ -264,19 +264,19 @@ The included HM-219 provides:
 
 The **13-pin DIN ACC socket** provides:
 
-| Pin | Function | Common Use |
-|-----|----------|------------|
-| 1 | GND | Ground reference |
-| 2 | SEND | PTT output to amp |
-| 3 | MOD | AF input (1-2V RMS) |
-| 4 | AF OUT | Fixed audio output |
-| 5 | RTTY/PSK | Keying line |
-| 6 | BAND | Band voltage output |
-| 7 | +8V | Accessory power |
-| 8 | ALC | ALC input from amp |
-| 11 | SEND | PTT output |
-| 12 | AF OUT | Adjustable audio out |
-| 13 | +13.8V | Power output (1A max) |
+| Pin | Function | Common Use            |
+| --- | -------- | --------------------- |
+| 1   | GND      | Ground reference      |
+| 2   | SEND     | PTT output to amp     |
+| 3   | MOD      | AF input (1-2V RMS)   |
+| 4   | AF OUT   | Fixed audio output    |
+| 5   | RTTY/PSK | Keying line           |
+| 6   | BAND     | Band voltage output   |
+| 7   | +8V      | Accessory power       |
+| 8   | ALC      | ALC input from amp    |
+| 11  | SEND     | PTT output            |
+| 12  | AF OUT   | Adjustable audio out  |
+| 13  | +13.8V   | Power output (1A max) |
 
 ### Common ACC Connections
 
@@ -298,21 +298,21 @@ Connect paddles or a straight key to the **KEY jack** (3.5mm stereo).
 
 ### Wiring
 
-| Connector | Function |
-|-----------|----------|
-| Tip | Dot (paddle) or Key line |
-| Ring | Dash (paddle) |
-| Sleeve | Ground |
+| Connector | Function                 |
+| --------- | ------------------------ |
+| Tip       | Dot (paddle) or Key line |
+| Ring      | Dash (paddle)            |
+| Sleeve    | Ground                   |
 
 ### Configuration
 
 **MENU** → **SET** → **Function** → **CW-KEY SET**
 
-| Setting | Options |
-|---------|---------|
-| Key Type | PADDLE, BUG, ELEC-KEY, STRAIGHT |
-| Dot/Dash | Normal or Reverse |
-| Key Speed | 6-60 WPM |
+| Setting   | Options                         |
+| --------- | ------------------------------- |
+| Key Type  | PADDLE, BUG, ELEC-KEY, STRAIGHT |
+| Dot/Dash  | Normal or Reverse               |
+| Key Speed | 6-60 WPM                        |
 
 ---
 

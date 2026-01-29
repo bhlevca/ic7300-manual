@@ -14,15 +14,15 @@ This chapter covers practical operating scenarios with detailed guidance on rece
 
 **Filter Selection by Mode:**
 
-| Mode | Recommended Filter | Width | Purpose |
-|------|-------------------|-------|---------|
-| SSB | FIL1 | 2.4 kHz | Normal voice reception |
-| SSB (crowded) | FIL2 | 1.8 kHz | Reduce adjacent interference |
-| CW | FIL2 | 500 Hz | Standard CW reception |
-| CW (contest) | FIL3 | 250 Hz | Maximum selectivity |
-| AM | FIL1 | 6 kHz | Full fidelity |
-| FM | FIL1 | 15 kHz | Standard FM |
-| Digital | FIL1 | 2.4-3.0 kHz | Capture digital signal bandwidth |
+| Mode          | Recommended Filter | Width       | Purpose                          |
+| ------------- | ------------------ | ----------- | -------------------------------- |
+| SSB           | FIL1               | 2.4 kHz     | Normal voice reception           |
+| SSB (crowded) | FIL2               | 1.8 kHz     | Reduce adjacent interference     |
+| CW            | FIL2               | 500 Hz      | Standard CW reception            |
+| CW (contest)  | FIL3               | 250 Hz      | Maximum selectivity              |
+| AM            | FIL1               | 6 kHz       | Full fidelity                    |
+| FM            | FIL1               | 15 kHz      | Standard FM                      |
+| Digital       | FIL1               | 2.4-3.0 kHz | Capture digital signal bandwidth |
 
 ### Tuning SSB Signals
 
@@ -83,14 +83,14 @@ Before every transmission, confirm:
 
 **Guidelines for Power Selection:**
 
-| Situation | Suggested Power | Reason |
-|-----------|----------------|--------|
-| Local contacts (<500 mi) | 25-50W | Sufficient, saves power |
-| Regional contacts | 50-75W | Good balance |
-| DX/Long distance | 75-100W | Maximum effectiveness |
-| Contests | 100W | Need every advantage |
-| Digital modes (FT8) | 25-50W | Often sufficient, protects TX |
-| Testing/Tuning | 5-10W | Minimize interference |
+| Situation                | Suggested Power | Reason                        |
+| ------------------------ | --------------- | ----------------------------- |
+| Local contacts (<500 mi) | 25-50W          | Sufficient, saves power       |
+| Regional contacts        | 50-75W          | Good balance                  |
+| DX/Long distance         | 75-100W         | Maximum effectiveness         |
+| Contests                 | 100W            | Need every advantage          |
+| Digital modes (FT8)      | 25-50W          | Often sufficient, protects TX |
+| Testing/Tuning           | 5-10W           | Minimize interference         |
 
 **Why Not Always Use Full Power:**
 - QRP contacts are rewarding
@@ -147,21 +147,21 @@ Before every transmission, confirm:
 
 **RST System:**
 
-| Readability | Meaning |
-|-------------|---------|
-| 1 | Unreadable |
-| 2 | Barely readable |
-| 3 | Readable with difficulty |
-| 4 | Readable with little difficulty |
-| 5 | Perfectly readable |
+| Readability | Meaning                         |
+| ----------- | ------------------------------- |
+| 1           | Unreadable                      |
+| 2           | Barely readable                 |
+| 3           | Readable with difficulty        |
+| 4           | Readable with little difficulty |
+| 5           | Perfectly readable              |
 
-| Strength | S-Meter Reading |
-|----------|-----------------|
-| 1 | Faint, barely perceptible |
-| 3 | Weak |
-| 5 | Fair |
-| 7 | Moderately strong |
-| 9 | Strong signal |
+| Strength | S-Meter Reading           |
+| -------- | ------------------------- |
+| 1        | Faint, barely perceptible |
+| 3        | Weak                      |
+| 5        | Fair                      |
+| 7        | Moderately strong         |
+| 9        | Strong signal             |
 
 **Common Reports:**
 - **5-9**: Loud and clear (often given even when not quite true)
@@ -177,14 +177,14 @@ Before every transmission, confirm:
 
 **Understanding Noise Sources:**
 
-| Noise Type | Characteristics | Best Solution |
-|------------|-----------------|---------------|
-| White noise | Constant hiss | NR (Noise Reduction) |
-| Impulse noise | Clicks, pops | NB (Noise Blanker) |
-| Heterodyne | Steady whistle | Notch filter |
-| AC hum | 60/120 Hz buzz | Notch or DSP filtering |
-| QRM | Other stations | Narrow filter, shift passband |
-| Atmospheric | Crashes, static | Wait, or use NR |
+| Noise Type    | Characteristics | Best Solution                 |
+| ------------- | --------------- | ----------------------------- |
+| White noise   | Constant hiss   | NR (Noise Reduction)          |
+| Impulse noise | Clicks, pops    | NB (Noise Blanker)            |
+| Heterodyne    | Steady whistle  | Notch filter                  |
+| AC hum        | 60/120 Hz buzz  | Notch or DSP filtering        |
+| QRM           | Other stations  | Narrow filter, shift passband |
+| Atmospheric   | Crashes, static | Wait, or use NR               |
 
 ### Noise Blanker (NB) Operation
 
@@ -280,11 +280,11 @@ The IC-7300 has three configurable filter positions (FIL1, FIL2, FIL3).
 
 **Default Settings:**
 
-| Position | SSB | CW | AM | FM |
-|----------|-----|----|----|-----|
-| FIL1 | 2.4 kHz | 500 Hz | 6 kHz | 15 kHz |
-| FIL2 | 1.8 kHz | 250 Hz | 3 kHz | 10 kHz |
-| FIL3 | 500 Hz | 50 Hz | 2 kHz | 7 kHz |
+| Position | SSB     | CW     | AM    | FM     |
+| -------- | ------- | ------ | ----- | ------ |
+| FIL1     | 2.4 kHz | 500 Hz | 6 kHz | 15 kHz |
+| FIL2     | 1.8 kHz | 250 Hz | 3 kHz | 10 kHz |
+| FIL3     | 500 Hz  | 50 Hz  | 2 kHz | 7 kHz  |
 
 ### Customizing Filter Widths
 
@@ -357,11 +357,11 @@ VOX automatically keys the transmitter when you speak, and returns to receive du
 
 **Key Parameters:**
 
-| Setting | Range | Purpose |
-|---------|-------|---------|
-| VOX Gain | 0-100% | Sensitivity to voice |
-| Anti-VOX | 0-100% | Prevents speaker from triggering TX |
-| VOX Delay | 0-3000ms | Hold time after you stop speaking |
+| Setting   | Range    | Purpose                             |
+| --------- | -------- | ----------------------------------- |
+| VOX Gain  | 0-100%   | Sensitivity to voice                |
+| Anti-VOX  | 0-100%   | Prevents speaker from triggering TX |
+| VOX Delay | 0-3000ms | Hold time after you stop speaking   |
 
 ### Setting Up VOX
 
@@ -401,13 +401,13 @@ VOX automatically keys the transmitter when you speak, and returns to receive du
 
 **Common VOX Problems:**
 
-| Problem | Cause | Solution |
-|---------|-------|----------|
-| Keys on noise | Gain too high | Reduce VOX gain |
-| Keys on speaker | Anti-VOX too low | Increase Anti-VOX or use headphones |
-| Cuts off words | Delay too short | Increase VOX delay |
-| Stays keyed during pause | Delay too long | Reduce VOX delay |
-| Erratic operation | Inconsistent voice level | Speak more consistently |
+| Problem                  | Cause                    | Solution                            |
+| ------------------------ | ------------------------ | ----------------------------------- |
+| Keys on noise            | Gain too high            | Reduce VOX gain                     |
+| Keys on speaker          | Anti-VOX too low         | Increase Anti-VOX or use headphones |
+| Cuts off words           | Delay too short          | Increase VOX delay                  |
+| Stays keyed during pause | Delay too long           | Reduce VOX delay                    |
+| Erratic operation        | Inconsistent voice level | Speak more consistently             |
 
 ---
 
@@ -579,12 +579,12 @@ The IC-7300 has built-in attenuators for extreme signal conditions.
 
 ## Summary: Operating Quick Reference
 
-| Situation | Mode | Filter | Power | Special |
-|-----------|------|--------|-------|---------|
-| Casual SSB | USB/LSB | FIL1 | 50W | NR if needed |
-| CW Ragchew | CW | FIL2 | 50W | AGC SLOW |
-| DX Pileup | Any | FIL2 | 100W | Compression ON |
-| Contest | Any | FIL2/3 | 100W | VOX ON |
-| Digital | USB-D | FIL1 | 30-50W | Software controls PTT |
-| Net | USB/LSB | FIL1 | As needed | Follow NCS |
-| Testing | Any | Any | 10W | Dummy load |
+| Situation  | Mode    | Filter | Power     | Special               |
+| ---------- | ------- | ------ | --------- | --------------------- |
+| Casual SSB | USB/LSB | FIL1   | 50W       | NR if needed          |
+| CW Ragchew | CW      | FIL2   | 50W       | AGC SLOW              |
+| DX Pileup  | Any     | FIL2   | 100W      | Compression ON        |
+| Contest    | Any     | FIL2/3 | 100W      | VOX ON                |
+| Digital    | USB-D   | FIL1   | 30-50W    | Software controls PTT |
+| Net        | USB/LSB | FIL1   | As needed | Follow NCS            |
+| Testing    | Any     | Any    | 10W       | Dummy load            |

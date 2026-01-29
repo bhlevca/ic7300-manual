@@ -15,12 +15,12 @@ The IC-7300 has a **built-in USB audio codec and CAT interface**, which means:
 
 ### What the USB Port Provides
 
-| Function | Description |
-|----------|-------------|
-| Audio IN | Transmit audio from computer to radio |
-| Audio OUT | Receive audio from radio to computer |
-| CAT Control | Computer control of frequency, mode, PTT |
-| CI-V Protocol | ICOM's Computer Interface protocol |
+| Function      | Description                              |
+| ------------- | ---------------------------------------- |
+| Audio IN      | Transmit audio from computer to radio    |
+| Audio OUT     | Receive audio from radio to computer     |
+| CAT Control   | Computer control of frequency, mode, PTT |
+| CI-V Protocol | ICOM's Computer Interface protocol       |
 
 ---
 
@@ -79,26 +79,26 @@ These settings are critical for reliable digital operation:
 
 **Access: MENU → SET → Connectors**
 
-| Setting | Value | Purpose |
-|---------|-------|---------|
-| CI-V Baud Rate | 115200 | Fast communication speed |
-| CI-V Address | 94h | Radio's CI-V address (default) |
-| CI-V Transceive | ON | Radio reports changes to software |
-| CI-V USB Port | Unlink from REMOTE | Separates USB from rear CI-V jack |
-| CI-V USB Baud Rate | 115200 | USB-specific baud rate |
-| CI-V USB Echo Back | ON | Required for most software |
+| Setting            | Value              | Purpose                           |
+| ------------------ | ------------------ | --------------------------------- |
+| CI-V Baud Rate     | 115200             | Fast communication speed          |
+| CI-V Address       | 94h                | Radio's CI-V address (default)    |
+| CI-V Transceive    | ON                 | Radio reports changes to software |
+| CI-V USB Port      | Unlink from REMOTE | Separates USB from rear CI-V jack |
+| CI-V USB Baud Rate | 115200             | USB-specific baud rate            |
+| CI-V USB Echo Back | ON                 | Required for most software        |
 
 **Audio Settings (same menu):**
 
-| Setting | Value | Purpose |
-|---------|-------|---------|
-| DATA MOD | USB | TX audio comes from USB |
-| DATA OFF MOD | MIC,ACC | Non-DATA mode audio source |
-| USB MOD Level | 50% | TX audio level (adjust later) |
-| USB AF Output Level | 50% | RX audio level (adjust later) |
-| ACC/USB AF SQL | OFF | Audio always present |
-| ACC/USB AF Beep Output | OFF | No beeps to computer |
-| ACC/USB AF IF Output | OFF | Raw audio, not IF |
+| Setting                | Value   | Purpose                       |
+| ---------------------- | ------- | ----------------------------- |
+| DATA MOD               | USB     | TX audio comes from USB       |
+| DATA OFF MOD           | MIC,ACC | Non-DATA mode audio source    |
+| USB MOD Level          | 50%     | TX audio level (adjust later) |
+| USB AF Output Level    | 50%     | RX audio level (adjust later) |
+| ACC/USB AF SQL         | OFF     | Audio always present          |
+| ACC/USB AF Beep Output | OFF     | No beeps to computer          |
+| ACC/USB AF IF Output   | OFF     | Raw audio, not IF             |
 
 ---
 
@@ -213,52 +213,52 @@ FT8 (Franke-Taylor design, 8-FSK modulation) is currently the most popular digit
 ### WSJT-X Configuration
 
 **File → Settings → General:**
-| Setting | Value |
-|---------|-------|
-| My Call | Your call sign |
+| Setting | Value                         |
+| ------- | ----------------------------- |
+| My Call | Your call sign                |
 | My Grid | Your grid square (e.g., FN31) |
-| Display | Your preference |
+| Display | Your preference               |
 
 **File → Settings → Radio:**
-| Setting | Value |
-|---------|-------|
-| Rig | Icom IC-7300 |
-| Serial Port | Your COM port (e.g., COM3) |
-| Baud Rate | 115200 |
-| Data Bits | 8 |
-| Stop Bits | 1 |
-| Handshake | None |
-| PTT Method | CAT |
-| Transmit Audio Source | Rear/Data |
-| Mode | Data/Pkt |
-| Split Operation | Fake It |
+| Setting               | Value                      |
+| --------------------- | -------------------------- |
+| Rig                   | Icom IC-7300               |
+| Serial Port           | Your COM port (e.g., COM3) |
+| Baud Rate             | 115200                     |
+| Data Bits             | 8                          |
+| Stop Bits             | 1                          |
+| Handshake             | None                       |
+| PTT Method            | CAT                        |
+| Transmit Audio Source | Rear/Data                  |
+| Mode                  | Data/Pkt                   |
+| Split Operation       | Fake It                    |
 
 **Click "Test CAT"** - Button should turn green
 **Click "Test PTT"** - Radio should key momentarily
 
 **File → Settings → Audio:**
-| Setting | Value |
-|---------|-------|
-| Input | USB Audio CODEC (or Microphone - USB Audio CODEC) |
-| Output | USB Audio CODEC (or Speakers - USB Audio CODEC) |
+| Setting | Value                                             |
+| ------- | ------------------------------------------------- |
+| Input   | USB Audio CODEC (or Microphone - USB Audio CODEC) |
+| Output  | USB Audio CODEC (or Speakers - USB Audio CODEC)   |
 
 ### FT8 Operating Procedure
 
 **Standard FT8 Frequencies:**
 
-| Band | Frequency | Notes |
-|------|-----------|-------|
-| 160m | 1.840 MHz | Night only |
-| 80m | 3.573 MHz | Popular |
-| 60m | 5.357 MHz | Channel-specific |
-| 40m | 7.074 MHz | Very popular |
-| 30m | 10.136 MHz | Popular |
-| 20m | 14.074 MHz | Most popular |
-| 17m | 18.100 MHz | |
-| 15m | 21.074 MHz | |
-| 12m | 24.915 MHz | |
-| 10m | 28.074 MHz | |
-| 6m | 50.313 MHz | |
+| Band | Frequency  | Notes            |
+| ---- | ---------- | ---------------- |
+| 160m | 1.840 MHz  | Night only       |
+| 80m  | 3.573 MHz  | Popular          |
+| 60m  | 5.357 MHz  | Channel-specific |
+| 40m  | 7.074 MHz  | Very popular     |
+| 30m  | 10.136 MHz | Popular          |
+| 20m  | 14.074 MHz | Most popular     |
+| 17m  | 18.100 MHz |                  |
+| 15m  | 21.074 MHz |                  |
+| 12m  | 24.915 MHz |                  |
+| 10m  | 28.074 MHz |                  |
+| 6m   | 50.313 MHz |                  |
 
 **Making FT8 Contacts:**
 
@@ -332,13 +332,13 @@ PSK31 (Phase Shift Keying, 31 baud) is a keyboard-to-keyboard mode:
 ### PSK31 Operating
 
 **Standard PSK31 Frequencies:**
-| Band | Frequency |
-|------|-----------|
-| 80m | 3.580 MHz |
-| 40m | 7.070 MHz |
-| 20m | 14.070 MHz |
-| 15m | 21.070 MHz |
-| 10m | 28.120 MHz |
+| Band | Frequency  |
+| ---- | ---------- |
+| 80m  | 3.580 MHz  |
+| 40m  | 7.070 MHz  |
+| 20m  | 14.070 MHz |
+| 15m  | 21.070 MHz |
+| 10m  | 28.120 MHz |
 
 **Making a PSK31 Contact:**
 
@@ -503,39 +503,39 @@ JS8Call is derived from FT8 but designed for messaging:
 
 ### Audio Level Guidelines
 
-| Meter | Target |
-|-------|--------|
-| Software RX level | -10 to -20 dB peaks |
-| ALC meter | No movement or barely touching |
-| Power meter | Should match software power setting |
+| Meter             | Target                              |
+| ----------------- | ----------------------------------- |
+| Software RX level | -10 to -20 dB peaks                 |
+| ALC meter         | No movement or barely touching      |
+| Power meter       | Should match software power setting |
 
 ### Recommended Power Levels
 
-| Mode | Power | Notes |
-|------|-------|-------|
-| FT8 | 25-50W | Very efficient, more is rarely better |
-| FT4 | 25-50W | Same as FT8 |
-| PSK31 | 25-50W | QRP works well |
-| RTTY | 50-75W | Full power OK for contests |
-| JS8Call | 25-50W | Similar to FT8 |
+| Mode    | Power  | Notes                                 |
+| ------- | ------ | ------------------------------------- |
+| FT8     | 25-50W | Very efficient, more is rarely better |
+| FT4     | 25-50W | Same as FT8                           |
+| PSK31   | 25-50W | QRP works well                        |
+| RTTY    | 50-75W | Full power OK for contests            |
+| JS8Call | 25-50W | Similar to FT8                        |
 
 ### CI-V Settings Summary
 
-| Setting | Value |
-|---------|-------|
-| CI-V Baud Rate | 115200 |
-| CI-V Address | 94h |
-| CI-V USB Echo Back | ON |
-| CI-V USB Port | Unlink from REMOTE |
+| Setting            | Value              |
+| ------------------ | ------------------ |
+| CI-V Baud Rate     | 115200             |
+| CI-V Address       | 94h                |
+| CI-V USB Echo Back | ON                 |
+| CI-V USB Port      | Unlink from REMOTE |
 
 ### Software PTT Settings
 
 | Software | PTT Method |
-|----------|------------|
-| WSJT-X | CAT |
-| Fldigi | Hamlib |
-| JS8Call | CAT |
-| MMTTY | CAT |
+| -------- | ---------- |
+| WSJT-X   | CAT        |
+| Fldigi   | Hamlib     |
+| JS8Call  | CAT        |
+| MMTTY    | CAT        |
 
 ---
 

@@ -58,25 +58,25 @@ Press **M.SCOPE** button or touch the scope display to access settings.
 
 ### Display Modes
 
-| Mode | Description | Best For |
-|------|-------------|----------|
-| **Center** | Tuned frequency in center | General operating |
-| **Fixed** | Shows fixed frequency range | Band monitoring |
-| **Scroll-C** | Center mode with scrolling | Scanning bands |
-| **Scroll-F** | Fixed mode with scrolling | Band edge monitoring |
+| Mode         | Description                 | Best For             |
+| ------------ | --------------------------- | -------------------- |
+| **Center**   | Tuned frequency in center   | General operating    |
+| **Fixed**    | Shows fixed frequency range | Band monitoring      |
+| **Scroll-C** | Center mode with scrolling  | Scanning bands       |
+| **Scroll-F** | Fixed mode with scrolling   | Band edge monitoring |
 
 ### Span Settings
 
-| Span | Shows | Resolution | Use |
-|------|-------|------------|-----|
-| ±2.5 kHz | 5 kHz | High detail | CW, weak signals |
-| ±5 kHz | 10 kHz | Good detail | SSB QSOs |
-| ±10 kHz | 20 kHz | Medium | Typical operating |
-| ±25 kHz | 50 kHz | Wide view | Scanning |
-| ±50 kHz | 100 kHz | Very wide | Contest monitoring |
-| ±100 kHz | 200 kHz | Band view | Band activity |
-| ±250 kHz | 500 kHz | Segment view | Multi-band |
-| ±500 kHz | 1 MHz | Maximum | Full band view |
+| Span     | Shows   | Resolution   | Use                |
+| -------- | ------- | ------------ | ------------------ |
+| ±2.5 kHz | 5 kHz   | High detail  | CW, weak signals   |
+| ±5 kHz   | 10 kHz  | Good detail  | SSB QSOs           |
+| ±10 kHz  | 20 kHz  | Medium       | Typical operating  |
+| ±25 kHz  | 50 kHz  | Wide view    | Scanning           |
+| ±50 kHz  | 100 kHz | Very wide    | Contest monitoring |
+| ±100 kHz | 200 kHz | Band view    | Band activity      |
+| ±250 kHz | 500 kHz | Segment view | Multi-band         |
+| ±500 kHz | 1 MHz   | Maximum      | Full band view     |
 
 ### Speed/Reference Level
 
@@ -163,15 +163,15 @@ Steady, unchanging vertical line
 
 ### Recognizing Patterns
 
-| Pattern | Likely Source |
-|---------|---------------|
-| Sharp vertical line | CW, carrier, birdie |
-| Wide varying blocks | SSB voice |
-| Regular blocks (15 sec) | FT8 |
-| Continuous wide band | AM broadcast |
-| Random speckles | Noise, static |
-| Horizontal lines | Sweeping radar |
-| Regular pulses | Digital beacon |
+| Pattern                 | Likely Source       |
+| ----------------------- | ------------------- |
+| Sharp vertical line     | CW, carrier, birdie |
+| Wide varying blocks     | SSB voice           |
+| Regular blocks (15 sec) | FT8                 |
+| Continuous wide band    | AM broadcast        |
+| Random speckles         | Noise, static       |
+| Horizontal lines        | Sweeping radar      |
+| Regular pulses          | Digital beacon      |
 
 ---
 
@@ -181,30 +181,30 @@ Access via **MENU** → **SET** → **Function** → **SCOPE**
 
 ### Display Configuration
 
-| Setting | Options | Description |
-|---------|---------|-------------|
-| Scope During TX | ON/OFF | Show scope while transmitting |
-| Waterfall Display | ON/OFF | Enable/disable waterfall |
-| Waterfall Speed | SLOW/MID/FAST | Scrolling rate |
-| Waterfall Size | Large/Small | Relative size |
-| Spectrum Color | Multiple | Spectrum trace color |
-| Waterfall Color | Multiple | Color scheme |
+| Setting           | Options       | Description                   |
+| ----------------- | ------------- | ----------------------------- |
+| Scope During TX   | ON/OFF        | Show scope while transmitting |
+| Waterfall Display | ON/OFF        | Enable/disable waterfall      |
+| Waterfall Speed   | SLOW/MID/FAST | Scrolling rate                |
+| Waterfall Size    | Large/Small   | Relative size                 |
+| Spectrum Color    | Multiple      | Spectrum trace color          |
+| Waterfall Color   | Multiple      | Color scheme                  |
 
 ### Marker Settings
 
-| Setting | Description |
-|---------|-------------|
-| Center Marker | Shows tuned frequency |
-| Edge Frequency | Display band edges |
-| Grid | Shows frequency/level grid |
-| Passband Edge | Shows filter bandwidth |
+| Setting        | Description                |
+| -------------- | -------------------------- |
+| Center Marker  | Shows tuned frequency      |
+| Edge Frequency | Display band edges         |
+| Grid           | Shows frequency/level grid |
+| Passband Edge  | Shows filter bandwidth     |
 
 ### Performance Settings
 
-| Setting | Options | Effect |
-|---------|---------|--------|
+| Setting    | Options             | Effect            |
+| ---------- | ------------------- | ----------------- |
 | FFT Window | Hanning/Rectangular | Spectral accuracy |
-| AVG | OFF/2/3/4 | Noise averaging |
+| AVG        | OFF/2/3/4           | Noise averaging   |
 
 ---
 
@@ -212,13 +212,13 @@ Access via **MENU** → **SET** → **Function** → **SCOPE**
 
 Choose a scheme that works for your eyes:
 
-| Scheme | Best For |
-|--------|----------|
-| **Default** | General use |
-| **Blue** | Dark environments |
-| **Green** | Low light |
-| **Heat** | Maximum contrast |
-| **Spectrum** | Rainbow style |
+| Scheme       | Best For          |
+| ------------ | ----------------- |
+| **Default**  | General use       |
+| **Blue**     | Dark environments |
+| **Green**    | Low light         |
+| **Heat**     | Maximum contrast  |
+| **Spectrum** | Rainbow style     |
 
 Experiment to find what shows weak signals best for you.
 
@@ -358,14 +358,14 @@ Experiment to find what shows weak signals best for you.
 
 ## ⌨️ Scope Quick Reference
 
-| Action | How |
-|--------|-----|
+| Action              | How                          |
+| ------------------- | ---------------------------- |
 | Open scope settings | Press M.SCOPE or touch scope |
-| Toggle waterfall | Long-press M.SCOPE |
-| Tune to signal | Double-touch on scope |
-| Zoom in | Touch to magnify, or pinch |
-| Change span | MULTI knob in scope mode |
-| Pan display | Touch and drag |
-| Reset view | Exit and re-enter scope |
+| Toggle waterfall    | Long-press M.SCOPE           |
+| Tune to signal      | Double-touch on scope        |
+| Zoom in             | Touch to magnify, or pinch   |
+| Change span         | MULTI knob in scope mode     |
+| Pan display         | Touch and drag               |
+| Reset view          | Exit and re-enter scope      |
 
 > 🔗 **Related**: [Basic Operations](04_basic_operations.md) | [Receiving & Transmitting](16_receiving_transmitting.md) | [Digital Modes](07_digital_modes.md)
