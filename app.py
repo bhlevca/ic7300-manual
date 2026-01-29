@@ -582,29 +582,21 @@ def render_touch_menu_page():
 
     st.markdown("---")
 
-    # Touch screen display areas
+    # Touch screen display areas (overview only)
     st.markdown("### Touch Screen Display Areas")
-    col1, col2 = st.columns(2)
-    with col1:
-        display_image("TouchPanel_display_1-15.png", "Touch Panel Areas 1-15")
-    with col2:
-        display_image("TouchPanel_display_16-29.png", "Touch Panel Areas 16-29")
+    st.markdown("Only the overview image is shown here. Detailed touch-area diagrams and function/menu screenshots are available in the 'Touch Display (1–29)' expander below.")
 
     st.markdown("---")
 
-    # Function and Menu screens
+    # Function and Menu screens (overview only)
     st.markdown("### Function and Menu Screens")
-    col1, col2 = st.columns(2)
-    with col1:
-        display_image("Functionscreen.png", "Function Screen (press FUNCTION button)")
-    with col2:
-        display_image("MenuScreen.png", "Menu Screen (press MENU button)")
+    st.markdown("See the 'Touch Display (1–29)' expander for full screenshots and descriptions of function/menu screens.")
 
     st.markdown("---")
 
-    # Multi-function menus
+    # Multi-function menus (overview)
     st.markdown("### Multi-Function Menu Items")
-    display_image("MultiFunction_menus.png", "Multi-function knob menu options vary by mode")
+    st.markdown("Detailed multi-function menu graphics are included in the expander below.")
 
     st.markdown("---")
 
@@ -651,6 +643,27 @@ def render_touch_menu_page():
 """
         )
         
+        st.markdown("---")
+
+        # Diagrams & screenshots
+        st.markdown("### Diagrams & Screenshots")
+        cols = st.columns(2)
+        with cols[0]:
+            display_image("TouchPanel_display_1-15.png", "Touch Panel: Display areas 1-15")
+        with cols[1]:
+            display_image("TouchPanel_display_16-29.png", "Touch Panel: Display areas 16-29")
+
+        st.markdown("---")
+        cols = st.columns(2)
+        with cols[0]:
+            display_image("Functionscreen.png", "Function Screen (press FUNCTION button)")
+        with cols[1]:
+            display_image("MenuScreen.png", "Menu Screen (press MENU button)")
+
+        st.markdown("---")
+        display_image("MultiFunction_menus.png", "Multi-function knob menu options vary by mode")
+        display_image("DisplayType_menu.png", "Display Type Configuration (MENU > SET > Display)")
+
         st.markdown("---")
 
     st.markdown("---")
