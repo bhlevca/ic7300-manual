@@ -410,28 +410,9 @@ def render_front_panel_page():
     st.markdown("---")
     
     # Touch screen display
-    st.markdown("### Touch Screen Display Areas")
-    col1, col2 = st.columns(2)
-    with col1:
-        display_image("TouchPanel_display_1-15.png", "Touch Panel Areas 1-15")
-    with col2:
-        display_image("TouchPanel_display_16-29.png", "Touch Panel Areas 16-29")
-
     st.markdown("---")
-    
-    # Function and Menu screens
-    st.markdown("### Function and Menu Screens")
-    col1, col2 = st.columns(2)
-    with col1:
-        display_image("Functionscreen.png", "Function Screen (press FUNCTION button)")
-    with col2:
-        display_image("MenuScreen.png", "Menu Screen (press MENU button)")
-
+    st.markdown("**For touch screen details and menu screenshots, see the \"Touch Screen & Menus\" chapter. (Use the sidebar or the interactive navigation button.)**")
     st.markdown("---")
-    
-    # Multi-function menus
-    st.markdown("### Multi-Function Menu Items")
-    display_image("MultiFunction_menus.png", "Multi-function knob menu options vary by mode")
 
     st.markdown("---")
     
@@ -461,10 +442,7 @@ def render_front_panel_page():
             "16. M.SCOPE": "Spectrum scope display options.",
             "17-18. SPEECH/SCAN": "Voice announcement and scan functions.",
         },
-        "🖥️ Display & Touch (19-29)": {
-            "19. Touch Screen": "4.3\" TFT LCD. Touch to tune, change settings, enter frequencies.",
-            "20-29. Display Areas": "See diagrams above for touch-sensitive areas.",
-        },
+
         "🎚️ Main Controls (30-34)": {
             "30. MAIN DIAL": "Tunes frequency. Push for fine tuning options.",
             "31-34. VFO/Memory": "VFO A/B, memory channels, split operation.",
@@ -601,12 +579,79 @@ def render_touch_menu_page():
 
     # Touch menu image
     display_image("Touch_menu.png", "Touch Screen Menu Overview")
-    
+
     st.markdown("---")
-    
-    # Display type settings
-    st.markdown("### Display Settings")
-    display_image("DisplayType_menu.png", "Display Type Configuration (MENU > SET > Display)")
+
+    # Touch screen display areas
+    st.markdown("### Touch Screen Display Areas")
+    col1, col2 = st.columns(2)
+    with col1:
+        display_image("TouchPanel_display_1-15.png", "Touch Panel Areas 1-15")
+    with col2:
+        display_image("TouchPanel_display_16-29.png", "Touch Panel Areas 16-29")
+
+    st.markdown("---")
+
+    # Function and Menu screens
+    st.markdown("### Function and Menu Screens")
+    col1, col2 = st.columns(2)
+    with col1:
+        display_image("Functionscreen.png", "Function Screen (press FUNCTION button)")
+    with col2:
+        display_image("MenuScreen.png", "Menu Screen (press MENU button)")
+
+    st.markdown("---")
+
+    # Multi-function menus
+    st.markdown("### Multi-Function Menu Items")
+    display_image("MultiFunction_menus.png", "Multi-function knob menu options vary by mode")
+
+    st.markdown("---")
+
+    with st.expander("🖥️ Touch Display (1–29)", expanded=False):
+        st.markdown("**Overview:** The touchscreen displays and touch-sensitive areas provide direct control over tuning, mode selection, filters, and the spectrum scope. Below is a concise description of the grouped touch areas so you can match them to the diagrams in this chapter.")
+        st.markdown("### Touch Areas 1–15 (Primary Display Regions)")
+        st.markdown(
+            """
+1. **Frequency Readout & Keypad** — Direct frequency entry and quick band selection.
+2. **Mode Indicator** — Shows current mode (SSB/CW/RTTY/FM/AM) and submode.
+3. **S-Meter / Power Meter** — Receive signal strength and transmit power/ALC readings.
+4. **Filter Display** — Current filter selection and passband edges.
+5. **Spectrum Scope (upper)** — Real-time signal peaks for the selected span.
+6. **Waterfall (lower)** — Historical signal activity over time.
+7. **Virtual Softkeys / Function Area** — Context-sensitive buttons (F1–F5) and quick actions.
+8. **Quick Menu / Status Icons** — Shortcuts for commonly used features (NR, NB, COMP).
+9. **AGC/NR/NOTCH Indicators** — DSP processing states and levels.
+10. **TUNE / TUNER Indicator** — Tuner status and auto-tune activation.
+11. **RIT / XIT Display** — Receive/transmit offset readouts.
+12. **Split / Memory Indicators** — Shows split operation and memory channel info.
+13. **Microphone / USB Audio Status** — Input selection and levels for digital modes.
+14. **Squelch / AF Display** — Audio/squelch status indicators.
+15. **Touch Tuning Area** — Tap to jump to signals shown in the scope/waterfall.
+"""
+        )
+        
+        st.markdown("### Touch Areas 16–29 (Secondary Controls & Menus)")
+        st.markdown(
+            """
+16. **Function Menus** — Additional function pages and options.
+17. **Multi-function Knob Context** — Displays current parameter controlled by the MULTI knob.
+18. **Menu Navigation** — Scrollable lists and menu selection panels.
+19. **Band Edge / Frequency Grid** — Shows numeric markers and grid lines.
+20. **Display Brightness / Contrast Controls** — Quick adjustments for visibility.
+21. **Recorder / Playback Controls** — Voice memos and screen capture controls.
+22. **Connectivity Status** — USB/CI‑V/ACC connection indicators.
+23. **Keyer / CW Settings** — CW keyer controls and sidetone settings.
+24. **Digital Mode Helpers** — Gateways for FT8/RTTY soft links and audio routing.
+25. **Scope Span & Zoom Controls** — Adjust scope span and magnification.
+26. **Waterfall Speed & Color** — Change scrolling speed and color scheme.
+27. **Grid & Marker Options** — Toggle markers and reference lines.
+28. **Band Plan Notes** — Quick reference overlays where available.
+29. **Help / Info** — Context-sensitive help and brief descriptions.
+"""
+        )
+        
+        st.markdown("---")
 
     st.markdown("---")
     
