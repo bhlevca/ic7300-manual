@@ -1,23 +1,28 @@
 # IC-7300 Interactive Manual 📻
 
+[![CI](https://github.com/bhlevca/ic7300-manual/actions/workflows/ci.yml/badge.svg)](https://github.com/bhlevca/ic7300-manual/actions/workflows/ci.yml)
+[![Python 3.9+](https://img.shields.io/badge/python-3.9+-blue.svg)](https://www.python.org/downloads/)
+[![Streamlit](https://img.shields.io/badge/Streamlit-1.28+-FF4B4B.svg)](https://streamlit.io)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+
 A comprehensive, interactive guide to the ICOM IC-7300 HF/50MHz transceiver built with Streamlit. Designed for beginners with step-by-step instructions, visual diagrams, and export capabilities.
 
 ![IC-7300](https://www.icomamerica.com/lineup/products/IC-7300/images/IC-7300_main.png)
 
-## 🎯 Features
+## ✨ Features
 
-- **Interactive Navigation**: Hierarchical sidebar with collapsible chapters
-- **Clickable Diagrams**: Interactive front/rear panel diagrams with tooltips
-- **Step-by-Step Wizards**: Guided procedures with Next/Previous navigation
-- **Full-Text Search**: Search across all content
-- **Dark/Light Mode**: Toggle between display modes
-- **Export Options**: Generate PDF or Word documents
-- **Multi-Platform**: Digital mode guides for Windows and Linux
+- **Tabbed Navigation** - Easy access to all sections via intuitive tabs
+- **Interactive Panel Diagrams** - SVG diagrams of front and rear panels with detailed control descriptions
+- **Expandable Sections** - Chapter content organized with collapsible sections
+- **Step-by-Step Wizards** - Guided procedures for common tasks (First Power On, Antenna Tuning, FT8 Setup)
+- **Full-Text Search** - Search across all documentation
+- **Quick Reference** - Band frequencies, button shortcuts, menu tree
+- **Responsive Design** - Works on desktop and mobile browsers
 
 ## 📚 Content Coverage
 
 ### Hardware Orientation
-- Front panel layout with annotated diagrams
+- Front panel layout with annotated SVG diagrams
 - Rear panel connections (antenna, ground, USB, ACC)
 - Touch screen interface guide
 - Button combinations and shortcuts
@@ -34,59 +39,52 @@ A comprehensive, interactive guide to the ICOM IC-7300 HF/50MHz transceiver buil
 - Internal antenna tuner operation
 - Interpreting SWR readings
 - Manual and automatic tuning
-- External tuner compatibility
-
-### Spectrum Scope & Waterfall
-- Center vs Fixed display modes
-- Reference level adjustment
-- Sweep speed settings
-- Waterfall color customization
-- Using the mini scope
 
 ### Digital Modes
 - USB audio and CAT control setup
 - WSJT-X (FT8/FT4) configuration
 - Fldigi setup
-- JS8Call configuration
 - Audio levels and ALC settings
-- Time synchronization
-
-### Platform Guides
-- Windows driver installation
-- Linux (Ubuntu) setup
-- Raspberry Pi configuration
 
 ## 🚀 Quick Start
 
 ### Prerequisites
 
-```bash
-# Python 3.8 or higher
-python --version
+- Python 3.9 or higher
+- pip (Python package manager)
 
-# Install dependencies
-pip install -r requirements.txt
-```
-
-### Running the App
+### Installation
 
 ```bash
 # Clone the repository
-git clone https://github.com/yourusername/ic7300-manual.git
+git clone https://github.com/bhlevca/ic7300-manual.git
 cd ic7300-manual
 
-# Run Streamlit app
+# Create virtual environment (recommended)
+python -m venv venv
+source venv/bin/activate  # On Windows: venv\Scripts\activate
+
+# Install dependencies
+pip install -e .
+
+# Run the application
 streamlit run app.py
 ```
 
-### Export Documents
+The application will open in your default web browser at `http://localhost:8501`.
+
+### Development Installation
 
 ```bash
-# Generate PDF
-python export/pdf_generator.py --output manual.pdf
+# Install with development dependencies
+pip install -e ".[dev]"
 
-# Generate Word document
-python export/docx_generator.py --output manual.docx
+# Run linting
+ruff check .
+black --check .
+
+# Run tests
+pytest
 ```
 
 ## 📁 Project Structure
@@ -94,101 +92,85 @@ python export/docx_generator.py --output manual.docx
 ```
 ic7300-manual/
 ├── app.py                      # Main Streamlit application
-├── requirements.txt            # Python dependencies
+├── pyproject.toml              # Project configuration & dependencies
 ├── README.md                   # This file
+├── LICENSE                     # MIT License
+├── CHANGELOG.md                # Version history
+├── CONTRIBUTING.md             # Contribution guidelines
+├── components/
+│   ├── __init__.py
+│   ├── interactive.py          # Panel control definitions
+│   ├── navigation.py           # Navigation helpers
+│   ├── search.py               # Search functionality
+│   └── wizards.py              # Step-by-step wizards
 ├── content/
-│   ├── chapters/               # Markdown content per section
+│   ├── chapters/               # Markdown documentation
 │   │   ├── 01_introduction.md
 │   │   ├── 02_front_panel.md
 │   │   ├── 03_rear_panel.md
-│   │   ├── 04_basic_operations.md
-│   │   ├── 05_spectrum_scope.md
-│   │   ├── 06_antenna_swr.md
-│   │   ├── 07_digital_modes.md
-│   │   ├── 08_wsjt_ft8.md
-│   │   ├── 09_fldigi_setup.md
-│   │   ├── 10_js8call.md
-│   │   └── 11_troubleshooting.md
-│   ├── images/                 # Annotated diagrams, screenshots
-│   └── quick_refs/             # Cheat sheets, reference tables
+│   │   └── ...
+│   └── quick_refs/             # Quick reference tables
+│       ├── band_frequencies.md
 │       ├── button_shortcuts.md
-│       ├── menu_tree.md
-│       └── band_frequencies.md
-├── export/
-│   ├── pdf_generator.py        # WeasyPrint PDF export
-│   └── docx_generator.py       # python-docx Word export
-├── components/
-│   ├── navigation.py           # Sidebar navigation component
-│   ├── search.py               # Full-text search functionality
-│   ├── interactive.py          # Interactive diagrams, tooltips
-│   └── wizards.py              # Step-by-step procedure wizards
-└── assets/
-    ├── diagrams/               # SVG/PNG panel diagrams
-    └── screenshots/            # Radio screen captures
+│       └── menu_tree.md
+└── .github/
+    └── workflows/
+        └── ci.yml              # GitHub Actions CI
 ```
 
-## 🔧 Configuration
+## 🖥️ Usage
 
-### IC-7300 Settings for Digital Modes
+### Running Locally
 
-The following settings should be configured on your IC-7300 for digital mode operation:
+```bash
+streamlit run app.py
+```
 
-| Setting | Path | Value |
-|---------|------|-------|
-| DATA MOD | MENU > SET > Connectors | USB |
-| USB MOD Level | MENU > SET > Connectors | 40-50% |
-| CI-V USB Baud Rate | MENU > SET > Connectors | 115200 |
-| CI-V USB Echo Back | MENU > SET > Connectors | ON |
-| Mode | Main screen | USB-D |
+### Running with Docker (coming soon)
 
-### Software Requirements
+```bash
+docker build -t ic7300-manual .
+docker run -p 8501:8501 ic7300-manual
+```
 
-| Software | Version | Purpose |
-|----------|---------|---------|
-| WSJT-X | 2.6+ | FT8/FT4/WSPR |
-| Fldigi | 4.1+ | PSK31/RTTY/CW |
-| JS8Call | 2.2+ | JS8 Mode |
-| Meinberg NTP | Latest | Time sync (Windows) |
+## 🛠️ Technologies
+
+- **[Streamlit](https://streamlit.io/)** - Web application framework
+- **[Python](https://www.python.org/)** - Programming language
+- **SVG** - Scalable vector graphics for diagrams
+- **Markdown** - Documentation format
 
 ## 🤝 Contributing
 
-Contributions are welcome! Please feel free to submit issues, feature requests, or pull requests.
+Contributions are welcome! Please see [CONTRIBUTING.md](CONTRIBUTING.md) for guidelines.
 
-### Development Setup
+### Ways to Contribute
 
-```bash
-# Create virtual environment
-python -m venv venv
-source venv/bin/activate  # Linux/Mac
-# or
-venv\Scripts\activate  # Windows
+- 📝 Improve documentation and content
+- 🐛 Report bugs and issues
+- 💡 Suggest new features
+- 🔧 Submit pull requests
+- 🌐 Add translations
 
-# Install dev dependencies
-pip install -r requirements-dev.txt
-
-# Run tests
-pytest tests/
-```
-
-## 📝 License
+## 📄 License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
 ## 🙏 Acknowledgments
 
-- ICOM Inc. for the IC-7300 transceiver
-- The amateur radio community for sharing their knowledge
-- K0PIR, M0NWK, WA7EWC and other hams who documented their setups
-- W1HKJ for Fldigi and Flrig software
+- ICOM for creating the excellent IC-7300 transceiver
+- The amateur radio community for their support and feedback
+- All contributors to this project
 
-## 📞 Resources
+## 📞 Contact
 
-- [ICOM IC-7300 Official Page](https://www.icomamerica.com/lineup/products/IC-7300/)
-- [ICOM IC-7300 Full Manual (PDF)](https://www.icomjapan.com/support/manual/2271/)
-- [WSJT-X Official Site](https://wsjt.sourceforge.io/)
-- [Fldigi Wiki](https://sourceforge.net/p/fldigi/wiki/Home/)
-- [JS8Call](http://js8call.com/)
+- GitHub Issues: [Report a bug](https://github.com/bhlevca/ic7300-manual/issues)
+- Author: Bogdan Hlevca
+
+## ⚠️ Disclaimer
+
+This is an unofficial, community-created manual. It is not affiliated with or endorsed by ICOM. Always refer to the official ICOM documentation for authoritative information.
 
 ---
 
-*Created by amateur radio operators, for amateur radio operators. 73!*
+**73 de the IC-7300 Manual Team!** 📻
