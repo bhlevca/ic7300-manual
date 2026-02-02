@@ -172,6 +172,9 @@ The waterfall shows signal history as a scrolling display:
 3. The radio tunes to that frequency
 4. Fine-tune with main dial for best audio
 
+![Scope Touch to Tune](../images/scope_touch_tune_placeholder.svg)
+*Caption: Touch and double‑touch behaviors illustrated (placeholder). Replace with a short GIF that shows touch → double‑touch → tuned result.*
+
 **Waterfall Tips from Experience:**
 - Narrow CW signals appear as thin bright lines
 - SSB signals look like fuzzy, irregular traces

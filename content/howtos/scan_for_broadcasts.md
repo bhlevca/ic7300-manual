@@ -30,6 +30,9 @@ Scanning lets the operator quickly locate active signals across a band or a list
 3. In **Center** mode, drag across the scope to sweep the frequency and tune continuously.  
 4. Use **Scroll‑C** mode for wide scanning when you want continuous motion through the band.
 
+![Scope Touch to Tune](../images/scope_touch_tune_placeholder.svg)
+*Caption: Touch the waterfall or a peak to jump and tune. Replace with an annotated GIF showing touch → tune sequence.*
+
 ## Pausing, Resuming and Locking
 
 - Pause: Press **SCAN** or touch the screen.  

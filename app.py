@@ -5,8 +5,8 @@ Main Streamlit Application
 A comprehensive, interactive guide to the ICOM IC-7300 HF/50MHz transceiver.
 """
 
-from pathlib import Path
 import base64
+from pathlib import Path
 
 import streamlit as st
 
@@ -267,7 +267,7 @@ def render_home_page():
 def render_chapter_content(chapter_file: str, chapter_title: str):
     """Render full chapter content in the main area."""
     content = load_chapter_content(chapter_file)
-    
+
     # Render the full markdown content
     st.markdown(content)
 
@@ -284,37 +284,37 @@ def render_chapter_content(chapter_file: str, chapter_title: str):
         st.markdown("---")
         st.markdown("### Interactive: Touch Screen and Menus")
         render_touch_menu_page()
-    
+
     # Real-life experience expander at the bottom
     with st.expander("💡 Real-Life Experience & Tips", expanded=False):
         render_experience_tips(chapter_file)
-    
+
     # Add navigation at the bottom
     st.markdown("---")
     chapters = get_chapter_list()
-    
+
     # Find current chapter index
     current_idx = None
     for i, ch in enumerate(chapters):
         if ch["file"] == chapter_file:
             current_idx = i
             break
-    
+
     if current_idx is not None:
         col1, col2, col3 = st.columns([1, 1, 1])
-        
+
         with col1:
             if current_idx > 0:
                 prev_ch = chapters[current_idx - 1]
                 if st.button(f"⬅️ {prev_ch['title']}", key="prev_chapter", use_container_width=True):
                     navigate_to_chapter(prev_ch["file"], prev_ch["title"])
                     st.rerun()
-        
+
         with col2:
             if st.button("🏠 Home", key="nav_home_bottom", use_container_width=True):
                 st.session_state.current_page = "home"
                 st.rerun()
-        
+
         with col3:
             if current_idx < len(chapters) - 1:
                 next_ch = chapters[current_idx + 1]
@@ -379,17 +379,19 @@ def render_experience_tips(chapter_file: str):
 - Multiple grounds? Bond them together to prevent ground loops
         """,
     }
-    
+
     if chapter_file in tips:
         st.markdown(tips[chapter_file])
     else:
-        st.markdown("""
+        st.markdown(
+            """
 **General Tips:**
 - Take your time learning each feature before moving on
 - Experiment with settings - you can always reset to defaults
 - Join online communities (QRZ.com forums, Reddit r/amateurradio) for more tips
 - Keep a log of settings that work well for you
-        """)
+        """
+        )
 
 
 def render_front_panel_page():
@@ -403,22 +405,24 @@ def render_front_panel_page():
     # Display front panel images
     st.markdown("### Front Panel Overview (Controls 1-19)")
     display_image("FrontPanel_1-19.png", "Front Panel - Left Section (Controls 1-19)")
-    
+
     st.markdown("### Front Panel Overview (Controls 20-34)")
     display_image("FrontPanel_20-34.png", "Front Panel - Right Section (Controls 20-34)")
 
     st.markdown("---")
-    
+
     # Touch screen display
     st.markdown("---")
-    st.markdown("**For touch screen details and menu screenshots, see the \"Touch Screen & Menus\" chapter. (Use the sidebar or the interactive navigation button.)**")
+    st.markdown(
+        '**For touch screen details and menu screenshots, see the "Touch Screen & Menus" chapter. (Use the sidebar or the interactive navigation button.)**'
+    )
     st.markdown("---")
 
     st.markdown("---")
-    
+
     # Control Details with expanders
     st.markdown("### Control Details")
-    
+
     control_groups = {
         "🔴 Power & Transmit (1-4)": {
             "1. POWER": "Hold for 1 second to turn ON/OFF. The radio remembers its last state.",
@@ -442,20 +446,19 @@ def render_front_panel_page():
             "16. M.SCOPE": "Spectrum scope display options.",
             "17-18. SPEECH/SCAN": "Voice announcement and scan functions.",
         },
-
         "🎚️ Main Controls (30-34)": {
             "30. MAIN DIAL": "Tunes frequency. Push for fine tuning options.",
             "31-34. VFO/Memory": "VFO A/B, memory channels, split operation.",
         },
     }
-    
+
     for group_name, controls in control_groups.items():
         with st.expander(group_name, expanded=False):
             for ctrl, desc in controls.items():
                 st.markdown(f"**{ctrl}**")
                 st.markdown(desc)
                 st.markdown("---")
-    
+
     # Real-life experience
     with st.expander("💡 Real-Life Experience & Tips", expanded=False):
         render_experience_tips("02_front_panel.md")
@@ -472,44 +475,46 @@ def render_rear_panel_page():
     # Display rear panel images
     st.markdown("### Rear Panel Overview")
     display_image("RearPanel.png", "Rear Panel - All Connections")
-    
+
     st.markdown("### Connection Diagram")
     display_image("RearPanel_connections.png", "Rear Panel Connection Points")
 
     st.markdown("---")
-    
+
     # Connection diagrams
     st.markdown("### Connection Diagrams")
-    
+
     col1, col2 = st.columns(2)
     with col1:
         st.markdown("#### External DC Power")
         display_image("Connecting_external_DC_power.png", "DC Power Connection (13.8V, 23A max)")
-        
+
         st.markdown("#### Antenna Tuner Connection")
         display_image("Connecting_antenna_tuner.png", "External Antenna Tuner")
-    
+
     with col2:
         st.markdown("#### ICOM Linear Amplifier")
         display_image("Connecting_ICOM_linear_apmlifier.png", "ICOM Linear Amplifier (IC-PW2)")
-        
+
         st.markdown("#### Non-ICOM Linear Amplifier")
         display_image("Connecting_nonICOM_linear_amplifier.png", "Generic Linear Amplifier")
 
     st.markdown("---")
-    
+
     st.markdown("### Digital Mode Connections")
     col1, col2 = st.columns(2)
     with col1:
         display_image("FSK&AFSK_connections.png", "FSK & AFSK Digital Mode Connections")
     with col2:
-        display_image("Using_ACC_or_microphone_connector.png", "ACC Socket & Microphone Connector Pinouts")
+        display_image(
+            "Using_ACC_or_microphone_connector.png", "ACC Socket & Microphone Connector Pinouts"
+        )
 
     st.markdown("---")
-    
+
     # Connection details
     st.markdown("### Connection Details")
-    
+
     connections = {
         "📡 ANT (Antenna)": {
             "Type": "SO-239 (accepts PL-259)",
@@ -544,12 +549,12 @@ def render_rear_panel_page():
             "Notes": "Configure key type in MENU > KEYER.",
         },
     }
-    
+
     for conn_name, details in connections.items():
         with st.expander(conn_name, expanded=False):
             for key, value in details.items():
                 st.markdown(f"**{key}:** {value}")
-    
+
     # Safety warning
     st.markdown(
         """
@@ -563,7 +568,7 @@ def render_rear_panel_page():
         """,
         unsafe_allow_html=True,
     )
-    
+
     # Real-life experience
     with st.expander("💡 Real-Life Experience & Tips", expanded=False):
         render_experience_tips("03_rear_panel.md")
@@ -584,13 +589,17 @@ def render_touch_menu_page():
 
     # Touch screen display areas (overview only)
     st.markdown("### Touch Screen Display Areas")
-    st.markdown("Only the overview image is shown here. Detailed touch-area diagrams and function/menu screenshots are available in the 'Touch Display (1–29)' expander below.")
+    st.markdown(
+        "Only the overview image is shown here. Detailed touch-area diagrams and function/menu screenshots are available in the 'Touch Display (1–29)' expander below."
+    )
 
     st.markdown("---")
 
     # Function and Menu screens (overview only)
     st.markdown("### Function and Menu Screens")
-    st.markdown("See the 'Touch Display (1–29)' expander for full screenshots and descriptions of function/menu screens.")
+    st.markdown(
+        "See the 'Touch Display (1–29)' expander for full screenshots and descriptions of function/menu screens."
+    )
 
     st.markdown("---")
 
@@ -601,7 +610,9 @@ def render_touch_menu_page():
     st.markdown("---")
 
     with st.expander("🖥️ Touch Display (1–29)", expanded=False):
-        st.markdown("**Overview:** The touchscreen displays and touch-sensitive areas provide direct control over tuning, mode selection, filters, and the spectrum scope. Below is a concise description of the grouped touch areas so you can match them to the diagrams in this chapter.")
+        st.markdown(
+            "**Overview:** The touchscreen displays and touch-sensitive areas provide direct control over tuning, mode selection, filters, and the spectrum scope. Below is a concise description of the grouped touch areas so you can match them to the diagrams in this chapter."
+        )
         st.markdown("### Touch Areas 1–15 (Primary Display Regions)")
         st.markdown(
             """
@@ -622,7 +633,7 @@ def render_touch_menu_page():
 15. **Touch Tuning Area** — Tap to jump to signals shown in the scope/waterfall.
 """
         )
-        
+
         st.markdown("### Touch Areas 16–29 (Secondary Controls & Menus)")
         st.markdown(
             """
@@ -642,7 +653,7 @@ def render_touch_menu_page():
 29. **Help / Info** — Context-sensitive help and brief descriptions.
 """
         )
-        
+
         st.markdown("---")
 
         # Diagrams & screenshots
@@ -667,8 +678,9 @@ def render_touch_menu_page():
         st.markdown("---")
 
     st.markdown("---")
-    
-    st.markdown("""
+
+    st.markdown(
+        """
     ### Touch Screen Tips
     
     **Quick Frequency Entry:**
@@ -696,10 +708,12 @@ def render_touch_menu_page():
     | CW Settings | MENU > SET > Function > CW-KEY SET |
     | AGC Settings | MENU > SET > Function > AGC |
     | Filter Settings | Touch the filter display on main screen |
-    """)
-    
+    """
+    )
+
     with st.expander("💡 Real-Life Experience & Tips", expanded=False):
-        st.markdown("""
+        st.markdown(
+            """
 **Touch screen techniques I use daily:**
 
 1. **Quick band change**: Touch the MHz digits, type new frequency, ENT
@@ -714,7 +728,8 @@ def render_touch_menu_page():
 **Hidden features:**
 - Long-press on some screen items reveals additional options
 - Touch and hold the S-meter to change meter display type
-        """)
+        """
+        )
 
 
 def render_wizard_page():
@@ -732,7 +747,7 @@ def render_wizard_page():
 
     if wizard_id is None:
         st.markdown("Select a wizard to get step-by-step guidance:")
-        
+
         cols = st.columns(2)
         for i, (wid, name, desc) in enumerate(wizard_list):
             with cols[i % 2]:
@@ -786,23 +801,23 @@ def render_wizard_page():
 def render_search_results():
     """Render search results with working navigation buttons."""
     query = st.session_state.get("search_query", "")
-    
+
     if not query:
         st.session_state.current_page = "home"
         st.rerun()
         return
-    
+
     st.markdown(f"### 🔍 Search Results for: *{query}*")
-    
+
     results = search_content(query)
-    
+
     if results:
         st.success(f"Found {len(results)} results")
-        
+
         for i, result in enumerate(results):
             with st.expander(f"📄 {result['title']}", expanded=True):
                 st.markdown(result["excerpt"])
-                
+
                 # Find the chapter file for this result
                 chapters = get_chapter_list()
                 chapter_file = None
@@ -810,7 +825,7 @@ def render_search_results():
                     if ch["title"] == result["title"] or result.get("file") == ch["file"]:
                         chapter_file = ch["file"]
                         break
-                
+
                 if chapter_file:
                     if st.button(f"📖 Open: {result['title']}", key=f"search_open_{i}"):
                         # Clear search and navigate
@@ -821,12 +836,14 @@ def render_search_results():
                         st.rerun()
     else:
         st.warning("No results found. Try different keywords.")
-        st.markdown("""
+        st.markdown(
+            """
         **Search tips:**
         - Use simple keywords like "antenna", "USB", "FT8"
         - Try related terms if your first search doesn't find what you need
         - Browse chapters in the sidebar for a complete overview
-        """)
+        """
+        )
 
     st.markdown("---")
     if st.button("🏠 Return to Home", key="search_home", use_container_width=True):
@@ -862,20 +879,20 @@ def main():
 
         # Search with proper state management
         st.markdown("### 🔍 Search")
-        
+
         def do_search():
             """Handle search submission."""
             if st.session_state.search_input_field:
                 st.session_state.search_query = st.session_state.search_input_field
                 st.session_state.current_page = "search"
-        
+
         search_input = st.text_input(
             "Search manual...",
             placeholder="e.g., antenna, FT8, USB",
             key="search_input_field",
             on_change=do_search,
         )
-        
+
         if st.button("🔍 Search", key="search_button", use_container_width=True):
             if search_input:
                 st.session_state.search_query = search_input
@@ -886,7 +903,7 @@ def main():
 
         # Chapter navigation by sections
         st.markdown("### 📖 Chapters")
-        
+
         sections = get_chapters_by_section()
         section_icons = {
             "Getting Started": "🚀",
@@ -912,7 +929,7 @@ def main():
 
         # Special pages
         st.markdown("### 🎛️ Interactive")
-        
+
         if st.button("🎛️ Front Panel Guide", key="nav_front", use_container_width=True):
             st.session_state.current_page = "front_panel"
             st.session_state.search_query = ""
@@ -939,7 +956,9 @@ def main():
         st.markdown("### 📋 Quick Reference")
         quick_refs = get_quick_refs()
         for ref in quick_refs:
-            if st.button(f"{ref['icon']} {ref['title']}", key=f"qr_{ref['file']}", use_container_width=True):
+            if st.button(
+                f"{ref['icon']} {ref['title']}", key=f"qr_{ref['file']}", use_container_width=True
+            ):
                 st.session_state.current_page = "quick_ref"
                 st.session_state.current_chapter = ref["file"]
                 st.session_state.current_chapter_title = ref["title"]
@@ -950,10 +969,10 @@ def main():
         st.caption("v1.0 | [GitHub](https://github.com/bhlevca/ic7300-manual)")
 
     # ==================== MAIN CONTENT ====================
-    
+
     # Get current page
     current_page = st.session_state.current_page
-    
+
     # Handle search results page
     if current_page == "search" and st.session_state.search_query:
         render_search_results()

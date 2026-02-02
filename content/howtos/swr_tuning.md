@@ -45,6 +45,14 @@ SWR indicates impedance matching between the transmitter and antenna system. Thi
 - Do not touch the antenna or feedline while transmitting.  
 - If available, use a dummy load when diagnosing suspected antenna problems.
 
+### Quick visual cues (placeholder images)
+
+![Tuner Sequence](../images/swr_tuner_sequence_placeholder.svg)
+*Caption: Sequence: long‑press **TUNER** → tuning (blinking) → TUNE steady → confirm SWR.*
+
+![Meter SWR Reading](../images/meter_swr_reading_placeholder.svg)
+*Caption: Meter readout while keying briefly to measure SWR. Replace with a screenshot/GIF showing meter behavior on transmit.*
+
 ## Examples
 
 **Example 1 — Simple tuning**

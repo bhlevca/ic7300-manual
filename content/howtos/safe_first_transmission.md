@@ -28,6 +28,9 @@ A concise checklist and step‑by‑step procedure to verify your antenna system
 9. Increase power gradually (for example: 10W → 25W → desired) — monitor SWR and ALC after each increase.  
 10. Log the frequency and resulting SWR/tuner settings for future reference.
 
+![Meter SWR Reading](../images/meter_swr_reading_placeholder.svg)
+*Caption: Use the meter display to check SWR and ALC while increasing power; replace with real image or GIF.*
+
 ## If SWR remains high
 - Recheck coax connectors, solder joints, and feedpoint.  
 - Test with a known good dummy load at the radio end (should show 1:1).  
