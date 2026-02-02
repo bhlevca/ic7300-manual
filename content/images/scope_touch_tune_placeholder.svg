@@ -1,15 +1,20 @@
-<svg xmlns='http://www.w3.org/2000/svg' width='800' height='220'>
+<svg xmlns='http://www.w3.org/2000/svg' width='900' height='260' role='img' aria-label='Scope touch-to-tune annotated'>
   <rect width='100%' height='100%' fill='#ffffff'/>
-  <text x='50%' y='18' font-size='16' text-anchor='middle' fill='#222'>Scope Touch‑to‑Tune (placeholder)</text>
-  <rect x='40' y='40' width='720' height='120' fill='#eceff1' stroke='#b0bec5'/> 
-  <g fill='#1E88E5'>
-    <rect x='80' y='70' width='40' height='40' rx='4'/> 
-    <rect x='150' y='60' width='60' height='60' rx='6'/> 
-    <rect x='230' y='50' width='80' height='80' rx='8'/> 
-    <rect x='330' y='55' width='70' height='70' rx='6'/> 
-    <rect x='420' y='65' width='54' height='54' rx='4'/> 
+  <text x='24' y='26' font-size='16' fill='#222'>Spectrum Scope — Touch‑to‑Tune (annotated)</text>
+  <g transform='translate(24,44)'>
+    <rect x='0' y='0' width='840' height='140' rx='8' fill='#f1f8fe' stroke='#cfd8dc'/>
+    <g fill='#0288d1'>
+      <rect x='60' y='40' width='36' height='58' rx='4'/>
+      <rect x='120' y='34' width='56' height='70' rx='6'/>
+      <rect x='196' y='28' width='80' height='84' rx='8'/>
+      <rect x='292' y='32' width='64' height='76' rx='6'/>
+      <rect x='364' y='44' width='46' height='60' rx='4'/>
+    </g>
+    <circle cx='210' cy='62' r='16' fill='#ffb74d' stroke='#fb8c00'/>
+    <text x='210' y='66' font-size='11' text-anchor='middle' fill='#fff'>Touch</text>
+    <text x='460' y='24' font-size='12' fill='#37474f'>Drag or tap a peak to jump and tune</text>
+    <rect x='520' y='82' width='200' height='28' rx='6' fill='#e8f5e9' stroke='#c8e6c9'/>
+    <text x='620' y='100' font-size='11' text-anchor='middle' fill='#2e7d32'>Selected frequency → tuned</text>
   </g>
-  <circle cx='240' cy='86' r='14' fill='#ffcc80' stroke='#fb8c00'/> 
-  <text x='240' y='88' font-size='10' text-anchor='middle' fill='#fff'>Touch</text>
-  <text x='50%' y='200' font-size='11' text-anchor='middle' fill='#666' class='img-caption'>Caption: Placeholder showing touch-to-tune interaction; replace with GIF demonstrating touch then audio tuning.</text>
+  <text x='24' y='240' font-size='11' fill='#666'>Caption: Touch a peak on the scope to tune; replace with short GIF showing touch → immediate tuning and meter change.</text>
 </svg>

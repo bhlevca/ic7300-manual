@@ -1,37 +1,36 @@
 # Scan for broadcasts (How‑to)
 
-This how‑to explains the scanning functions of the IC‑7300: Program Scan, Memory Scan, and using the Spectrum Scope for quick scanning and tuning. The document is concise and follows a neutral style with links to related references.
+This how‑to describes the IC‑7300 scanning functions: Program Scan, Memory Scan, and the Spectrum Scope. It is presented concisely with links to related references.
 
 ## Overview
 
-Scanning lets the operator quickly locate active signals across a band or a list of stored frequencies. Scans can be performed using program lists, memory channels, or by interacting directly with the spectrum scope.
+Scanning enables locating active signals across a band or a set of stored frequencies. Scans may use program lists, memory channels, or direct interaction with the spectrum scope.
 
 ## Program Scan (quick list)
 
-1. Prepare a program list (frequencies you wish to scan).  
-   - MENU > SCAN > Program Scan → Create or Edit the list.  
-2. Start the scan: press **SCAN** or use the on‑screen control and choose **Program Scan**.  
-3. The radio will step through the list and stop on active signals.  
-4. To stop or pause the scan: press **SCAN** again or touch the displayed frequency.  
+1. Prepare a program list of frequencies to be scanned: MENU > SCAN > Program Scan → Create or Edit the list.  
+2. Start the program scan using the **SCAN** control and select **Program Scan**.  
+3. The radio steps through the list and stops on active signals.  
+4. Stop or pause the scan by pressing **SCAN** or touching the displayed frequency.
 
 **Notes**: Program Scan is ideal for custom lists (repeaters, beacons, nets).
 
 ## Memory Scan
 
-1. Write frequencies to memory channels (MW or V/M options).  
-2. MENU > SCAN > Memory Scan → select range or saved group.  
-3. Start scan: radio steps through memory channels and stops on active signals.  
-4. To add a frequency to memory while listening: store current frequency to a memory channel (Hold MW).  
+1. Store frequencies in memory channels (MW or V/M).  
+2. Select MENU > SCAN > Memory Scan and choose a range or saved group.  
+3. Start the memory scan; the radio steps through channels and stops on active signals.  
+4. To add the current frequency while monitoring, store it to a memory channel (Hold MW).
 
 ## Spectrum Scope Scanning
 
-1. Press **M.SCOPE** or touch the spectrum display.  
-2. Touch or double‑touch a signal on the scope to immediately tune to it.  
-3. In **Center** mode, drag across the scope to sweep the frequency and tune continuously.  
-4. Use **Scroll‑C** mode for wide scanning when you want continuous motion through the band.
+1. Activate the spectrum scope: press **M.SCOPE** or touch the scope area.  
+2. Touch or double‑touch a peak to tune directly to that signal.  
+3. In **Center** mode, drag across the scope to sweep frequency and tune continuously.  
+4. Use **Scroll‑C** mode for a continuous wideband sweep when required.
 
 ![Scope Touch to Tune](../images/scope_touch_tune_placeholder.svg)
-*Caption: Touch the waterfall or a peak to jump and tune. Replace with an annotated GIF showing touch → tune sequence.*
+*Caption: Touch a peak on the spectrum scope to jump and tune; replace with a short GIF demonstrating touch → tuning transition when available.*
 
 ## Pausing, Resuming and Locking
 
@@ -49,8 +48,8 @@ Scanning lets the operator quickly locate active signals across a band or a list
 
 ## Troubleshooting
 
-- If the scan never stops, check squelch settings (may be too open).  
-- If the scope is unresponsive, ensure **SCOPE** is enabled in MENU > SCOPE SET.
+ - If the scan never stops, check squelch settings (they may be too open).  
+ - If the scope is unresponsive, confirm **SCOPE** is enabled in MENU > SCOPE SET.
 
 ---
 

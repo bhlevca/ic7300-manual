@@ -1,6 +1,6 @@
 # Safe First Transmission & SWR Verification (How‑to)
 
-A concise checklist and step‑by‑step procedure to verify your antenna system and perform your first safe transmission. Follow these steps every time you change antennas, cables, or after maintenance.
+A concise checklist and step‑by‑step procedure to verify the antenna system and perform a safe first transmission. These steps are recommended after antenna or cable changes, and after maintenance.
 
 ## Objectives
 - Verify correct antenna connection and SWR at low power
@@ -14,14 +14,14 @@ A concise checklist and step‑by‑step procedure to verify your antenna system
 4. SD card inserted (optional for settings backup)
 
 ## Step‑by‑step checklist (do this before any transmit)
-1. Set RF power to low (5–10 W): MENU → SET → TX → RF POWER → choose 5–10W.  
-2. Set mode to **CW** or use the radio's **TUNE** function for a steady carrier.  
-3. Ensure tuner is bypassed for the initial measurement: press **TUNER** until the TUNE icon disappears (tuner OFF).  
-4. Touch the meter area and cycle to **SWR**.  
-5. Key the transmitter briefly (PTT or TUNE carrier) for 1–2 seconds and read the SWR.  
-   - If SWR < 1.5:1, proceed to step 9.  
-   - If SWR 1.5–2.5:1, enable the internal tuner (press **TUNER**) and hold 1s to auto‑tune. Recheck SWR.  
-   - If SWR > 3:1 or tuner fails to match: stop transmitting, reduce power to minimum, test with dummy load, and inspect coax/antenna.
+1. Set RF power to low (5–10 W): MENU → SET → TX → RF POWER → select 5–10 W.  
+2. Select a steady carrier (for example, **CW** or the **TUNE** function).  
+3. Bypass the internal tuner for the initial measurement: press **TUNER** until the TUNE icon disappears.  
+4. Select the meter display and choose **SWR**.  
+5. Key the transmitter briefly (PTT or TUNE carrier) for 1–2 seconds and read SWR.  
+   - If SWR &lt; 1.5:1, continue with step 9.  
+   - If SWR is 1.5–2.5:1, enable the internal tuner (press **TUNER**, hold ~1 s) and recheck SWR.  
+   - If SWR &gt; 3:1 or the tuner cannot match: cease transmitting, reduce power to minimum, test with a dummy load, and inspect the coax and antenna.
 6. If tuner is used successfully and SWR is acceptable, reduce tuner bypass or leave enabled as needed.  
 7. With SWR acceptable, set the meter to **ALC**, speak into the microphone at normal level, and verify ALC does not pin (aim for occasional light movement).  
 8. Set MIC Gain, COMP, and VOX (if used) conservatively: MIC Gain to give ALC ~50–70% on voice peaks; COMP 0–3 for casual; VOX gain 60% with 0.3s delay when used.  
@@ -29,7 +29,7 @@ A concise checklist and step‑by‑step procedure to verify your antenna system
 10. Log the frequency and resulting SWR/tuner settings for future reference.
 
 ![Meter SWR Reading](../images/meter_swr_reading_placeholder.svg)
-*Caption: Use the meter display to check SWR and ALC while increasing power; replace with real image or GIF.*
+*Caption: Annotated meter showing SWR and ALC while increasing power; replace with real images or GIFs when available.*
 
 ## If SWR remains high
 - Recheck coax connectors, solder joints, and feedpoint.  

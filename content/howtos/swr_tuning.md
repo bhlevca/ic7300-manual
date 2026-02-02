@@ -1,6 +1,6 @@
 # SWR Tuning (How‑to)
 
-This how‑to describes practical, step‑by‑step procedures for measuring and reducing Standing Wave Ratio (SWR) on the IC‑7300. It is written in a concise, neutral style with cross‑references to related chapters such as the Antenna & SWR chapter and the troubleshooting flow.
+This how‑to provides concise, step‑by‑step procedures for measuring and reducing Standing Wave Ratio (SWR) on the IC‑7300. It is presented in a neutral tone and includes cross‑references to the Antenna & SWR chapter and troubleshooting flows.
 
 ## Overview
 
@@ -21,37 +21,37 @@ SWR indicates impedance matching between the transmitter and antenna system. Thi
 
 ## Step‑by‑step procedure
 
-1. Set RF Power to a low value (5–10 W).  
-2. Disable the internal tuner briefly to measure the antenna directly: press **TUNER** until the TUNE icon disappears (or confirm tuner is OFF).  
-3. Set the operating frequency to the frequency you intend to use.  
-4. Select a steady carrier mode (RTTY or use the Tune function) for the measurement.  
-5. Touch the meter area on the display and cycle to **SWR**.  
-6. Key the transmitter briefly (press PTT) or use the TUNER's tuning carrier to read SWR on the meter.  
-7. Record the result and release PTT.
+1. Set RF power to a low value (5–10 W).  
+2. Bypass the internal tuner to measure the antenna directly: press **TUNER** until the TUNE icon disappears.  
+3. Select the operating frequency to be used.  
+4. Use a steady carrier (for example, the TUNE function) for a stable reading.  
+5. Select the meter display and choose **SWR**.  
+6. Key the transmitter briefly (PTT or TUNE carrier) and read the SWR on the meter.  
+7. Record the measurement and release the PTT.
 
 ### If SWR is acceptable
-- Re‑enable the tuner if desired and operate normally.  
-- Optionally store tuner settings by enabling and allowing the tuner to memorize matches at the operating frequencies (press and hold **TUNER** to start auto‑tune).
+- Re‑enable the tuner if desired and continue normal operation.  
+- Optionally store tuner settings by allowing the tuner to memorize matches at the operating frequencies (hold **TUNER** to auto‑tune).
 
 ### If SWR is high (> 2:1)
-1. Reduce power.  
-2. Check coax and connectors for damage, corrosion, or loose fittings.  
-3. Test with a known good dummy load at the feed point — if SWR is 1:1 on a dummy load, the radio and cable are likely OK.  
-4. Try tuning at several points across the band (low, center, high) and record the SWR curve (see SWR Plot procedure in the Antenna & SWR chapter).  
-5. If necessary, enable the tuner and attempt auto‑tune (hold **TUNER** 1 second). If auto‑tune does not reach an acceptable match, consult the troubleshooting flow.
+1. Reduce output power.  
+2. Inspect coax and connectors for damage, corrosion, or loose fittings.  
+3. Verify the radio and cable with a known good dummy load at the feed point; a 1:1 result indicates the antenna is the likely issue.  
+4. Measure SWR at low, center and high band points to determine resonance and bandwidth (see SWR Plot in the Antenna & SWR chapter).  
+5. If required, enable the tuner and run auto‑tune (hold **TUNER**). If auto‑tune cannot achieve an acceptable match, follow the troubleshooting flow.
 
 ## Reading SWR on transmit safely
 - Always use low power when keying to measure SWR.  
 - Do not touch the antenna or feedline while transmitting.  
 - If available, use a dummy load when diagnosing suspected antenna problems.
 
-### Quick visual cues (placeholder images)
+### Visual cues (annotated images)
 
 ![Tuner Sequence](../images/swr_tuner_sequence_placeholder.svg)
-*Caption: Sequence: long‑press **TUNER** → tuning (blinking) → TUNE steady → confirm SWR.*
+*Caption: Tuner auto‑sequence: long‑press **TUNER** → tuning (blinking) → TUNE steady → confirm SWR.*
 
 ![Meter SWR Reading](../images/meter_swr_reading_placeholder.svg)
-*Caption: Meter readout while keying briefly to measure SWR. Replace with a screenshot/GIF showing meter behavior on transmit.*
+*Caption: Annotated meter readout showing SWR and ALC; replace with captured images or short GIFs when available.*
 
 ## Examples
 
