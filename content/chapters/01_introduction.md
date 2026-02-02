@@ -6,6 +6,8 @@ Welcome to your ICOM IC-7300 HF/50 MHz transceiver! This manual will guide you t
 
 The IC-7300 was released in January 2016 and represents a significant advancement in amateur radio technology. It was the first entry-level HF radio to use **RF Direct Sampling** technology, which digitizes the RF signal directly at the antenna input, providing exceptional receiver performance.
 
+> **Expanded Tutorial Edition:** For an expanded, step‑by‑step edition of this manual with additional how‑tos, checklists, and learning exercises see: [Expanded Tutorial Edition](../expanded/expanded_edition.md).
+
 ### Key Specifications
 
 | Specification | Value |
@@ -99,5 +101,20 @@ This interactive manual is designed for beginners but comprehensive enough for e
 Navigate using the sidebar, or use the search function to find specific topics. Let's get started!
 
 ---
+
+## First Session: Visualize SDR in Action
+
+Follow these steps on your first session to see how SDR changes the experience compared with legacy radios:
+
+1. Ensure the radio is powered off and safely connected (see [Station Setup](05_station_setup.md) if needed).
+2. Press and hold the **POWER** button for about 1 second; release when the touchscreen illuminates and the startup chime sounds.
+3. Press **BAND** repeatedly until you reach a busy band such as 20 m (frequencies around 14.000–14.350 MHz).
+4. Observe the spectrum scope (top of screen) showing real‑time signals as peaks and the waterfall below indicating signal history (bright colors = recent strong activity).
+5. Press **M.SCOPE** to expand the scope, rotate **MULTI** to change **SPAN** (turn clockwise to widen to 100 kHz), and touch a peak on the scope to tune directly to that frequency.
+6. Compare mentally to an analog rig: you can now see signals before you hear them, and touch‑to‑tune replaces blind knob‑searching.
+
+**Try these quick experiments:**
+- Adjust **FIL** (Filter) while tuned to an SSB signal to hear differences between FIL1 and FIL2.
+- Press **NR** and rotate **MULTI** to see how noise reduction affects audio clarity.
 
 *Ready to explore your radio? Continue to the [Front Panel](02_front_panel.md) chapter to learn about all the controls.*

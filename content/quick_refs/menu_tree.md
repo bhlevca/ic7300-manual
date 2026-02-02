@@ -54,6 +54,9 @@ MENU
 │   ├── Program Scan
 │   ├── Memory Scan
 │   └── Select Memory Scan
+
+See also: [How‑to: Scan for broadcasts](../howtos/scan_for_broadcasts.md)
+
 └── OTHER
     ├── DR (Direct Recall)
     ├── Auto Notch

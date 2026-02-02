@@ -1,0 +1,151 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "ic7300-manual"
+version = "1.0.0"
+description = "Interactive manual for the ICOM IC-7300 HF/50MHz transceiver"
+readme = "README.md"
+license = { text = "MIT" }
+requires-python = ">=3.9"
+authors = [{ name = "Bogdan Hlevca", email = "bhlevca@gmail.com" }]
+maintainers = [{ name = "Bogdan Hlevca", email = "bhlevca@gmail.com" }]
+keywords = [
+    "ham-radio",
+    "amateur-radio",
+    "icom",
+    "ic-7300",
+    "transceiver",
+    "manual",
+    "streamlit",
+    "interactive",
+    "hf",
+    "digital-modes",
+    "ft8",
+    "wsjt-x",
+]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Environment :: Web Environment",
+    "Framework :: Streamlit",
+    "Intended Audience :: End Users/Desktop",
+    "License :: OSI Approved :: MIT License",
+    "Natural Language :: English",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Topic :: Communications :: Ham Radio",
+    "Topic :: Documentation",
+    "Topic :: Education",
+]
+
+dependencies = ["streamlit>=1.28.0", "markdown>=3.5.0", "Pillow>=10.0.0"]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=7.0.0",
+    "pytest-cov>=4.0.0",
+    "black>=23.0.0",
+    "ruff>=0.1.0",
+    "mypy>=1.0.0",
+    "pre-commit>=3.0.0",
+]
+export = ["python-docx>=1.0.0", "weasyprint>=60.0", "pymdown-extensions>=10.0"]
+search = ["whoosh>=2.7.4"]
+all = ["ic7300-manual[dev,export,search]"]
+
+[project.urls]
+Homepage = "https://github.com/bhlevca/ic7300-manual"
+Documentation = "https://github.com/bhlevca/ic7300-manual#readme"
+Repository = "https://github.com/bhlevca/ic7300-manual.git"
+Issues = "https://github.com/bhlevca/ic7300-manual/issues"
+Changelog = "https://github.com/bhlevca/ic7300-manual/blob/main/CHANGELOG.md"
+
+[project.scripts]
+ic7300-manual = "app:main"
+
+[tool.hatch.build.targets.wheel]
+packages = ["."]
+
+[tool.hatch.build.targets.sdist]
+include = [
+    "/app.py",
+    "/components",
+    "/content",
+    "/assets",
+    "/README.md",
+    "/LICENSE",
+]
+
+[tool.black]
+line-length = 100
+target-version = ["py39", "py310", "py311", "py312"]
+include = '\.pyi?$'
+exclude = '''
+/(
+    \.eggs
+  | \.git
+  | \.hatch
+  | \.mypy_cache
+  | \.tox
+  | \.venv
+  | _build
+  | buck-out
+  | build
+  | dist
+  | __pycache__
+)/
+'''
+
+[tool.ruff]
+line-length = 100
+target-version = "py39"
+select = [
+    "E",   # pycodestyle errors
+    "W",   # pycodestyle warnings
+    "F",   # Pyflakes
+    "I",   # isort
+    "B",   # flake8-bugbear
+    "C4",  # flake8-comprehensions
+    "UP",  # pyupgrade
+    "ARG", # flake8-unused-arguments
+    "SIM", # flake8-simplify
+]
+ignore = [
+    "E501",   # line too long (handled by black)
+    "B008",   # do not perform function calls in argument defaults
+    "C901",   # too complex
+    "ARG001", # unused function argument
+]
+
+[tool.ruff.per-file-ignores]
+"__init__.py" = ["F401"]
+
+[tool.mypy]
+python_version = "3.9"
+warn_return_any = true
+warn_unused_configs = true
+disallow_untyped_defs = false
+ignore_missing_imports = true
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+python_files = ["test_*.py"]
+addopts = "-v --cov=. --cov-report=term-missing"
+
+[tool.coverage.run]
+source = ["."]
+omit = ["tests/*", "**/__pycache__/*"]
+
+[tool.coverage.report]
+exclude_lines = [
+    "pragma: no cover",
+    "def __repr__",
+    "raise AssertionError",
+    "raise NotImplementedError",
+    "if __name__ == .__main__.:",
+]

@@ -15,19 +15,51 @@ def get_chapter_list() -> List[Dict]:
         List of chapter dictionaries with 'file', 'title', and 'icon' keys.
     """
     chapters = [
-        {"file": "01_introduction.md", "title": "Introduction", "icon": "📘"},
-        {"file": "02_front_panel.md", "title": "Front Panel", "icon": "🎛️"},
-        {"file": "03_rear_panel.md", "title": "Rear Panel", "icon": "🔌"},
-        {"file": "04_basic_operations.md", "title": "Basic Operations", "icon": "⚙️"},
-        {"file": "05_spectrum_scope.md", "title": "Spectrum Scope", "icon": "📊"},
-        {"file": "06_antenna_swr.md", "title": "Antenna & SWR", "icon": "📡"},
-        {"file": "07_digital_modes.md", "title": "Digital Modes Overview", "icon": "💻"},
-        {"file": "08_wsjt_ft8.md", "title": "WSJT-X / FT8", "icon": "📶"},
-        {"file": "09_fldigi_setup.md", "title": "Fldigi Setup", "icon": "🔧"},
-        {"file": "10_js8call.md", "title": "JS8Call", "icon": "📨"},
-        {"file": "11_troubleshooting.md", "title": "Troubleshooting", "icon": "🛠️"},
+        # Getting Started
+        {"file": "01_introduction.md", "title": "Introduction", "icon": "📘", "section": "Getting Started"},
+        {"file": "05_station_setup.md", "title": "Station Setup", "icon": "🏠", "section": "Getting Started"},
+        
+        # Device Description (renamed from Hardware)
+        {"file": "02_front_panel.md", "title": "Front Panel", "icon": "🎛️", "section": "Device Description"},
+        {"file": "03_rear_panel.md", "title": "Rear Panel", "icon": "🔌", "section": "Device Description"},
+        {"file": "09_touchscreen_menus.md", "title": "Touch Screen & Menus", "icon": "📱", "section": "Device Description"},
+        {"file": "15_installation_connections.md", "title": "Installation & Connections", "icon": "🔗", "section": "Device Description"},
+        
+        # Operation
+        {"file": "04_basic_operations.md", "title": "Basic Operations", "icon": "⚙️", "section": "Operation"},
+        {"file": "16_receiving_transmitting.md", "title": "Receiving & Transmitting", "icon": "📡", "section": "Operation"},
+        {"file": "17_scope_operation.md", "title": "Scope Operation", "icon": "📊", "section": "Operation"},
+        {"file": "10_operating_scenarios.md", "title": "Operating Scenarios", "icon": "📻", "section": "Operation"},
+        {"file": "06_antenna_swr.md", "title": "Antenna & SWR", "icon": "🔧", "section": "Operation"},
+        
+        # Digital Modes
+        {"file": "07_digital_modes.md", "title": "Digital Modes Overview", "icon": "💻", "section": "Digital"},
+        {"file": "11_digital_modes_detailed.md", "title": "Digital Modes In-Depth", "icon": "🖥️", "section": "Digital"},
+        {"file": "08_wsjt_ft8.md", "title": "WSJT-X / FT8", "icon": "📶", "section": "Digital"},
+        
+        # Reference
+        {"file": "12_troubleshooting.md", "title": "Troubleshooting", "icon": "🛠️", "section": "Reference"},
+        {"file": "13_glossary.md", "title": "Glossary", "icon": "📖", "section": "Reference"},
+        {"file": "14_quick_reference_card.md", "title": "Quick Reference Card", "icon": "📋", "section": "Reference"},
     ]
     return chapters
+
+
+def get_chapters_by_section() -> Dict[str, List[Dict]]:
+    """
+    Get chapters organized by section.
+    
+    Returns:
+        Dictionary with section names as keys and chapter lists as values.
+    """
+    chapters = get_chapter_list()
+    sections = {}
+    for chapter in chapters:
+        section = chapter.get("section", "Other")
+        if section not in sections:
+            sections[section] = []
+        sections[section].append(chapter)
+    return sections
 
 
 def get_quick_refs() -> List[Dict]:
