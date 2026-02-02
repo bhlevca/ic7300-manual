@@ -170,14 +170,12 @@ The IC-7300 is designed for 50Ω antenna systems. It includes an internal antenn
 
 ### Initial SWR Check
 
-Before transmitting, always check SWR:
+Before transmitting, always check SWR or follow the Safe First Transmission checklist:
 
 1. Power on the radio
 2. Set power to **minimum** (touch MULTI → select RF POWER → turn to 5-10W)
 3. Select a clear frequency
-4. Press **TUNER** button once to put tuner in bypass (icon should be OFF)
-5. Key the transmitter briefly (CW mode works well for this)
-6. Read the SWR on the built-in meter
+4. **Follow the Safe First Transmission checklist** (See: [Safe First Transmission & SWR Verification](../howtos/safe_first_transmission.md))
 
 **Interpreting SWR:**
 

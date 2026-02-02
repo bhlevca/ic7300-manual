@@ -21,7 +21,7 @@ One-page summaries for rapid lookup during operation.
 2. ☐ Frequency is clear (listen first!)
 3. ☐ Mode is correct (USB/LSB/CW/etc.)
 4. ☐ Power level appropriate
-5. ☐ SWR is acceptable (<2:1) — See: [SWR Tuning (How‑to)](../howtos/swr_tuning.md)
+5. ☐ SWR is acceptable (<2:1) — See: [SWR Tuning (How‑to)](../howtos/swr_tuning.md) and [Safe First Transmission](../howtos/safe_first_transmission.md)
 6. ☐ ALC not peaking (just touching)
 
 ---

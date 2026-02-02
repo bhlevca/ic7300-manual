@@ -57,6 +57,7 @@ SWR indicates impedance matching between the transmitter and antenna system. Thi
 ## Troubleshooting and links
 - If SWR remains high after the steps above, see the troubleshooting flow: [High SWR on Transmit](../chapters/12_troubleshooting.md#high-swr-on-transmit).  
 - For background information, see the Antenna & SWR chapter: [Antenna & SWR](../chapters/06_antenna_swr.md).  
+- For a concise pre‑transmit checklist, see: [Safe First Transmission & SWR Verification](./safe_first_transmission.md).  
 
 ## Safety and best practice
 - Never touch the antenna or coax during transmit.  

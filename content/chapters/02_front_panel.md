@@ -224,11 +224,47 @@ Context-sensitive control that adjusts various parameters:
 - RIT/XIT offset
 - And more...
 
+#### Practice: Using the MULTI and Main Dial Together
+1. Push MULTI to display context options, then rotate to change RF Power—observe the on-screen meter update.  
+2. Push MAIN DIAL to change tuning rate, then rotate quickly to scan and slowly to fine tune small signals.  
+3. Combine: Use MULTI to select FIL, then use MAIN DIAL for precise tuning inside the chosen filter.
+
 ### EXIT Button
 **Location**: Near the touch screen
 
 - **Press**: Returns to previous screen/menu level
 - **Multiple presses**: Returns to main operating screen
+
+---
+
+## Practice Exercises (Front Panel)
+
+These short exercises help build muscle memory and confidence with the front panel controls.
+
+### Main Dial (Tuning Practice)
+1. Power on the radio (hold **POWER** 1 second).  
+2. Select 20 m (press **BAND** repeatedly until the 14 MHz range appears).  
+3. Set tuning step small: Touch **TS** on the touchscreen and choose 10 Hz using **MULTI**.  
+4. Use the **MAIN DIAL** to find a voice signal on the scope and center it in the passband; fine‑tune until speech sounds natural (no chipmunk or robot voice).  
+5. Repeat with 1 kHz step for faster sweeping.
+
+### AF / RF Practice
+1. With radio on, tune to a band with background noise (e.g., 40 m evenings).  
+2. Set AF (volume) low, then increase to comfortable level with inner ring.  
+3. Rotate outer RF ring counter‑clockwise to reduce sensitivity until background hiss drops but strong signals remain audible.  
+4. Return RF to max and experiment with RF/SQL to notice differences.
+
+### PBT (Passband Tuning) Exercise
+1. Tune to a crowded SSB signal.  
+2. Press **PBT** to enable; use inner/outer PBT knobs to slide the passband and reduce adjacent splatter.  
+3. Disable **PBT** when done.
+
+### NR / NB / NOTCH Quick Checks
+- **NR**: Enable and set to 2–4 while listening to speech—back off if audio sounds unnatural.  
+- **NB**: On impulse noise, turn on NB and increase slightly until ticks disappear.  
+- **NOTCH**: Auto for carriers; manual for drifting tones (use MULTI to set frequency).
+
+Practice these for 10–15 minutes to feel comfortable with the panel controls.
 
 ---
 
