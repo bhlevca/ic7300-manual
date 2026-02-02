@@ -9,7 +9,7 @@ This quick reference covers all button functions and shortcuts on the IC-7300.
 | **POWER** | - | Toggle ON/OFF |
 | **TRANSMIT** | Toggle TX/RX | - |
 | **VOX/BK-IN** | Toggle VOX mode | - |
-| **TUNER** | Enable/disable tuner | Start auto-tune |
+| **TUNER** | Enable/disable tuner (see: [SWR Tuning](../howtos/swr_tuning.md)) | Start auto-tune |
 
 ## Navigation Buttons
 

@@ -324,4 +324,8 @@ If SWR is high:
 
 ---
 
+## How‑to: SWR Tuning
+
+For a concise step‑by‑step procedure and quick checklist, see: [SWR Tuning (How‑to)](../howtos/swr_tuning.md). The how‑to includes safe measurement practices, examples, and links to the troubleshooting flow.
+
 *Continue to [Digital Modes Overview](07_digital_modes.md) to learn about setting up the IC-7300 for FT8, PSK31, and other digital modes.*

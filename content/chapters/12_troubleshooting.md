@@ -303,6 +303,8 @@ When something goes wrong, follow this process:
    - Feedpoint connection OK?
    - Insulators cracked?
 
+For step‑by‑step tuning and safe measurement procedures see: [SWR Tuning (How‑to)](../howtos/swr_tuning.md).
+
 ### Transmitted Audio Distorted
 
 **Reported by Other Stations:**
